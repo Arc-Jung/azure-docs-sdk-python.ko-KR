@@ -1,0 +1,7 @@
+- name: Docs
+  href: /
+  homepage: /
+  items:
+    - name: Python 개발자용 Azure
+      tocHref: /python/azure/
+      topicHref: /python/azure/index
