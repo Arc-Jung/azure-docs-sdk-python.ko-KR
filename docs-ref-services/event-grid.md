@@ -11,13 +11,13 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: 81c4e74b00ac59c789c5a0b83eaa10652ec6d8ac
-ms.sourcegitcommit: db4608e494cb4340649bce98ba9fb4504d3686bb
+ms.openlocfilehash: a50a203a0733f25f2a88d6f4a43c6bddc388d3e7
+ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/25/2017
+ms.lasthandoff: 09/14/2017
 ---
-# <a name="service-bus-libraries-for-python"></a>Python용 Service Bus 라이브러리
+# <a name="event-grid-libraries-for-python"></a>Python용 Event Grid 라이브러리
 
 ## <a name="overview"></a>개요
 Azure Event Grid는 게시-구독 모델을 사용하여 균일한 이벤트 소비를 허용하는 완전히 관리되는 지능형 이벤트 라우팅 서비스입니다.

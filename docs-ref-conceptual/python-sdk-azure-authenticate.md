@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: 1dba0bdd9b543c11b31f3001737038e7e99daf08
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 000397b573700aa92572a6252b6d84da8945a1e5
+ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Python용 Azure 관리 라이브러리를 사용하여 인증
 
@@ -122,6 +122,7 @@ client = ComputeManagementClient(credentials, subscription_id)
 >     base_url=AZURE_CHINA_CLOUD.endpoints.active_directory_resource_id)
 > ```
 
+
 ## <a name="mgmt-auth-file"></a>파일 기반 인증
 
 가장 간단한 인증 방법은 Azure 서비스 사용자에 대한 자격 증명을 포함하는 JSON 파일을 만드는 것입니다. 다음 CLI 명령을 사용하여 새 서비스 사용자와 이 파일을 동시에 만들 수 있습니다.
@@ -161,6 +162,31 @@ from azure.mgmt.compute import ComputeManagementClient
 client = get_client_from_auth_file(ComputeManagementClient)
 ```
 
+## <a name="mgmt-auth-msi"></a>관리되는 서비스 ID(MSI)를 사용하여 인증 
+MSI는 특정 자격 증명을 만들 필요 없이 Azure의 리소스가 SDK/CLI를 사용하는 간단한 방법입니다.
+
+```python
+from msrestazure.azure_active_directory import MSIAuthentication
+from azure.mgmt.resource import ResourceManagementClient, SubscriptionClient
+
+    # Create MSI Authentication
+    credentials = MSIAuthentication()
+
+
+    # Create a Subscription Client
+    subscription_client = SubscriptionClient(credentials)
+    subscription = next(subscription_client.subscriptions.list())
+    subscription_id = subscription.subscription_id
+
+    # Create a Resource Management client
+    resource_client = ResourceManagementClient(credentials, subscription_id)
+
+    
+    # List resource groups as an example. The only limit is what role and policy are assigned to this MSI token.
+    for resource_group in resource_client.resource_groups.list():
+        print(resource_group.name)
+
+```
 
 ## <a name="mgmt-auth-cli"></a>CLI 기반 인증
 
