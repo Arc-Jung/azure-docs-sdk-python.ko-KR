@@ -10,11 +10,11 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 4154367f0449b174790ee3f3c9480ca0bceeea87
-ms.sourcegitcommit: c6d9500492131bf782488fcafc7c5c41c2703e92
+ms.openlocfilehash: ca1af18ae37549238ffaafbd2d5f8223974e0d11
+ms.sourcegitcommit: 12ea38af93cc4f1ba6aac333035829a69f6aed0c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/29/2017
 ---
 # <a name="managed-disks"></a>Managed Disks
 
@@ -129,7 +129,7 @@ async_update.wait()
 
 ## <a name="virtual-machine-scale-sets-with-managed-disks"></a>Managed Disks를 포함하는 Virtual Machine 규모 집합
 
-Managed Disks 이전에는 필요한 모든 VM에 대한 저장소 계정을 확장 집합 내에서 수동으로 만든 다음 ``vhd_containers`` list 매개 변수를 사용하여 모든 저장소 계정 이름을 확장 집합 Rest API에 제공해야 했습니다. 공식적인 전환 가이드는 `article <https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`에서 사용할 수 있습니다.
+Managed Disks 이전에는 필요한 모든 VM에 대한 저장소 계정을 확장 집합 내에서 수동으로 만든 다음 ``vhd_containers`` list 매개 변수를 사용하여 모든 저장소 계정 이름을 확장 집합 Rest API에 제공해야 했습니다. 공식적인 전환 가이드는 이 문서의 내용 `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`에서 사용할 수 있습니다.
 
 이제 관리 디스크를 사용하면 저장소 계정을 전혀 관리할 필요가 없습니다. VMSS Python SDK에 익숙하다면 ``storage_profile``은 이제 VM을 만드는 데 사용된 매개 변수와 똑같을 수 있습니다.
 
