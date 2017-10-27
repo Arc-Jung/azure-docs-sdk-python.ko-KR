@@ -17,8 +17,8 @@
           href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
         - name: CosmosDB
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
-        - name: 데이터 레이크 분석
-          href: 'https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-manage-use-python-sdk'
+        - name: Azure Notebooks
+          href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
     - name: 자습서
       items:
         - name: Flask + PostgreSQL
