@@ -1,0 +1,35 @@
+- name: Python 개발자용 Azure
+  href: index.yml
+  items:
+    - name: 개요
+      href: python-sdk-azure-overview.md
+    - name: 도구
+      href: python-azure-tools.md
+    - name: Python 모듈 시작
+      href: python-sdk-azure-get-started.md
+    - name: 인증
+      href: python-sdk-azure-authenticate.md
+    - name: 빠른 시작
+      items:
+        - name: 웹앱
+          href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+        - name: PostgreSQL Database
+          href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+        - name: CosmosDB
+          href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
+        - name: Azure Notebooks
+          href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
+    - name: 자습서
+      items:
+        - name: Flask + PostgreSQL
+          href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-docker-python-postgresql-app'
+    - name: 샘플
+      items:
+        - name: 가상 컴퓨터
+          href: python-sdk-azure-virtual-machine-samples.md
+        - name: 웹 앱
+          href: python-sdk-azure-web-apps-samples.md
+        - name: SQL 데이터베이스
+          href: python-sdk-azure-sql-database-samples.md
+        - name: 모든 Python 샘플
+          href: 'https://azure.microsoft.com/resources/samples/?platform=python'

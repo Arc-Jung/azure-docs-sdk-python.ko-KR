@@ -1,0 +1,80 @@
+---
+title: "Python용 Azure Web Apps 라이브러리"
+description: 
+keywords: Azure, Python, SDK, API, Web Apps, App Service
+author: lisawong19
+ms.author: liwong
+manager: douge
+ms.date: 06/12/2017
+ms.topic: article
+ms.prod: azure
+ms.technology: azure
+ms.devlang: python
+ms.service: appservice
+ms.openlocfilehash: 05f6ad173f4ec051654b5eb2a986b2c2a93cc33a
+ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.translationtype: HT
+ms.contentlocale: ko-KR
+ms.lasthandoff: 08/18/2017
+---
+# <a name="azure-web-apps-libraries-for-python"></a><span data-ttu-id="bdcd0-103">Python용 Azure Web Apps 라이브러리</span><span class="sxs-lookup"><span data-stu-id="bdcd0-103">Azure Web Apps libraries for Python</span></span>
+
+## <a name="overview"></a><span data-ttu-id="bdcd0-104">개요</span><span class="sxs-lookup"><span data-stu-id="bdcd0-104">Overview</span></span>
+
+<span data-ttu-id="bdcd0-105">[Azure App Service](/azure/app-service)를 사용하여 웹 사이트, 웹 응용 프로그램, 서비스 및 REST API를 배포하고 크기 조정합니다.</span><span class="sxs-lookup"><span data-stu-id="bdcd0-105">Deploy and scale websites, web applications, services, and REST APIs with [Azure App Service](/azure/app-service).</span></span>
+
+<span data-ttu-id="bdcd0-106">Azure App Service를 시작하려면 [Azure에서 Python 웹앱 만들기](/azure/app-service-web/app-service-web-get-started-python)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="bdcd0-106">To get started with Azure App Service, see [Create a Python web app in Azure](/azure/app-service-web/app-service-web-get-started-python).</span></span>
+
+## <a name="management-api"></a><span data-ttu-id="bdcd0-107">관리 API</span><span class="sxs-lookup"><span data-stu-id="bdcd0-107">Management API</span></span>
+
+<span data-ttu-id="bdcd0-108">관리 API를 사용하여 Azure App Service에서 호스팅되는 요소를 배포, 관리 및 크기 조정합니다.</span><span class="sxs-lookup"><span data-stu-id="bdcd0-108">Deploy, manage, and scale elements hosted in the Azure App Service with the management API.</span></span>
+
+<span data-ttu-id="bdcd0-109">pip를 통해 라이브러리를 설치합니다.</span><span class="sxs-lookup"><span data-stu-id="bdcd0-109">Install the library via pip.</span></span>
+
+```bash
+pip install azure-mgmt-web
+```
+
+### <a name="example"></a><span data-ttu-id="bdcd0-110">예제</span><span class="sxs-lookup"><span data-stu-id="bdcd0-110">Example</span></span>
+
+<span data-ttu-id="bdcd0-111">GitHub 리포지토리에서 Azure Web App으로 웹앱을 배포합니다.</span><span class="sxs-lookup"><span data-stu-id="bdcd0-111">Deploy a webapp from a GitHub repository into Azure Web App.</span></span>
+
+```python
+siteConfiguration = SiteConfig(
+    python_version='3.4'
+)
+
+# create a web app
+web_client.web_apps.create_or_update(
+    RESOURCE_GROUP_NAME,
+    WEB_APP_NAME,
+    Site(
+        location='eastus',
+        server_farm_id=SERVICE_PLAN_ID,
+        site_config=siteConfiguration
+    )
+)
+
+# continuous deployment with GitHub
+source_control_async_operation = web_client.web_apps.create_or_update_source_control(
+    RESOURCE_GROUP_NAME,
+    WEB_APP_NAME,
+    SiteSourceControl(
+        location='GitHub',
+        repo_url='https://github.com/lisawong19/python-docs-hello-world',
+        branch='master'
+    )
+)
+```
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="bdcd0-112">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="bdcd0-112">Explore the Management APIs</span></span>](/python/api/overview/azure/webapps/managementlibrary)
+
+## <a name="samples"></a><span data-ttu-id="bdcd0-113">샘플</span><span class="sxs-lookup"><span data-stu-id="bdcd0-113">Samples</span></span> 
+
+* <span data-ttu-id="bdcd0-114">[Python을 사용하여 Azure 웹 사이트 관리(영문)][1]</span><span class="sxs-lookup"><span data-stu-id="bdcd0-114">[Manage Azure websites with python][1]</span></span>
+* <span data-ttu-id="bdcd0-115">[논리 앱 워크플로 만들기][2]</span><span class="sxs-lookup"><span data-stu-id="bdcd0-115">[Create a Logic App workflow][2]</span></span>
+ 
+<span data-ttu-id="bdcd0-116">웹 응용 프로그램 샘플의 [전체 목록](https://azure.microsoft.com/en-us/resources/samples/?platform=python&term=web-app)을 봅니다.</span><span class="sxs-lookup"><span data-stu-id="bdcd0-116">View the [complete list](https://azure.microsoft.com/en-us/resources/samples/?platform=python&term=web-app) of web application samples.</span></span>
+
+[1]: https://azure.microsoft.com/resources/samples/app-service-web-python-manage
+[2]: ../docs-ref-conceptual/python-sdk-azure-samples-logic-app-workflow.md

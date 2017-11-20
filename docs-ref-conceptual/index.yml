@@ -1,0 +1,81 @@
+### YamlMime:YamlDocument
+documentType: LandingData
+title: Python 개발자용 Azure
+metadata:
+  document_id: be4f4c73-c672-4490-8fca-ae087fba8b3b
+  title: 'Python 개발자용 Azure - 자습서, API 참조'
+  description: Python 개발자를 위한 훌륭한 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다.
+  keywords: 'Azure, Python, SDK, API'
+  author: lisawong19
+  ms.author: liwong
+  manager: douge
+  ms.date: 07/20/2017
+  ms.topic: article
+  ms.prod: azure
+  ms.technology: azure
+  ms.devlang: python
+  ms.service: multiple
+sections:
+  - items:
+      - type: markdown
+        text: |
+          Python 개발자를 위한 훌륭한 자습서 및 도구를 찾아볼 수 있는 아래 리소스를 사용하여 Azure에서 앱 개발을 시작합니다.
+  - items:
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 2
+        items:
+          - href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+            html: <p>Azure에 첫 번째 웹앱 배포</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_get-started.svg'
+            title: 시작
+          - href: 'https://azure.microsoft.com/resources/samples/?platform=pythont&view=azure-python'
+            html: <p>Python을 사용하는 Azure 샘플 코드</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_code-samples.svg'
+            title: 코드 샘플
+          - href: 'https://docs.microsoft.com/python/azure/python-azure-tools'
+            html: <p>개발자 도구</p>
+            image:
+              src: 'https://docs.microsoft.com/media/common/i_download-install.svg'
+            title: SDK &amp; 도구
+          - href: 'https://docs.microsoft.com/en-us/python/api/overview/azure/?view=azure-python'
+            html: <p>Python 라이브러리</p>
+            image:
+              src: 'https://docs.microsoft.com/en-us/media/common/i_api-reference.svg'
+            title: API 참조
+  - title: 5분 빠른 시작
+    items:
+      - type: paragraph
+        text: Azure 서비스를 사용하여 Python 앱을 빌드하는 방법을 알아봅니다.
+      - type: list
+        style: cards
+        className: cardsM
+        columns: 3
+        items:
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/app-service-web.svg'
+            title: Azure에 첫 번째 웹앱 배포
+            href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
+            title: Python 앱을 Azure PostgreSQL Database에 연결
+            href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/cosmosdb.svg'
+            title: Cosmos DB로 웹앱 빌드
+            href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
+          - image:
+              src: 'https://docs.microsoft.com/azure/media/index/MachineLearning.svg'
+            title: Azure Notebooks를 사용하는 데이터 과학
+            href: 'https://notebooks.azure.com/liwong/libraries/iris1234/html/Data+Science+Quickstart.ipynb'
+  - title: 샘플
+    items:
+      - type: list
+        style: unordered
+        items:
+          - html: '<a href="https://azure.microsoft.com/resources/samples/container-service-python-manage/">Azure 클러스터의 Docker 컨테이너에 배포 및 연결(영문)</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/storage-python-manage/">Python에서 Azure Storage 관리 시작(영문)</a>'
+          - html: '<a href="https://azure.microsoft.com/resources/samples/virtual-machines-python-manage/">Azure Virtual Machines 관리 샘플(영문)</a>'
