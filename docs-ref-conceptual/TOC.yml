@@ -11,10 +11,10 @@
       href: python-sdk-azure-authenticate.md
     - name: 빠른 시작
       items:
-        - name: 웹앱
+        - name: Web Apps
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
-        - name: PostgreSQL Database
-          href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+        - name: Face API
+          href: 'https://docs.microsoft.com/azure/cognitive-services/face/tutorials/faceapiinpythontutorial'
         - name: CosmosDB
           href: 'https://docs.microsoft.com/azure/cosmos-db/create-documentdb-python'
         - name: Azure Notebooks
@@ -29,7 +29,7 @@
           href: python-sdk-azure-virtual-machine-samples.md
         - name: 웹 앱
           href: python-sdk-azure-web-apps-samples.md
-        - name: SQL 데이터베이스
+        - name: SQL Database
           href: python-sdk-azure-sql-database-samples.md
         - name: 모든 Python 샘플
           href: 'https://azure.microsoft.com/resources/samples/?platform=python'
