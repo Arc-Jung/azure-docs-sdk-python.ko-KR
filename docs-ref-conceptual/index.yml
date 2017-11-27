@@ -60,9 +60,9 @@ sections:
             title: Azure에 첫 번째 웹앱 배포
             href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-get-started-python'
           - image:
-              src: 'https://docs.microsoft.com/azure/media/index/PostgreSQL.svg'
-            title: Python 앱을 Azure PostgreSQL Database에 연결
-            href: 'https://docs.microsoft.com/azure/postgresql/connect-python'
+              src: 'https://docs.microsoft.com/azure/media/index/API_Face.svg'
+            title: Face API 시작
+            href: 'https://docs.microsoft.com/azure/cognitive-services/face/tutorials/faceapiinpythontutorial'
           - image:
               src: 'https://docs.microsoft.com/azure/media/index/cosmosdb.svg'
             title: Cosmos DB로 웹앱 빌드
