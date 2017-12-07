@@ -11,11 +11,11 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: 68074d445a21a38fe6ffb6f5f7b7cbd8f24d87a3
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 7c069f849007ea2c02cf4347ce213dd033dcd68b
+ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 12/05/2017
 ---
 # <a name="azure-libraries-for-python"></a>Python용 Azure 라이브러리
 
@@ -45,7 +45,7 @@ server = sql_client.servers.create_or_update(
 )
 ```
 
-라이브러리의 전체 목록 및 프로젝트로 가져오는 방법에 대한 [설치 지침](python-sdk-azure-install.md)을 검토한 다음, [시작 문서](python-sdk-azure-get-started.md)를 참조하여 인증을 설정하고 자신의 Azure 구독에 대한 샘플 코드를 실행합니다 .
+라이브러리의 전체 목록 및 프로젝트로 가져오는 방법에 대한 [설치 지침](python-sdk-azure-install.md)을 검토한 다음 [시작 문서](python-sdk-azure-get-started.yml)를 참조하여 인증을 설정하고 자신의 Azure 구독에 대한 샘플 코드를 실행합니다 .
 
 ## <a name="connect-to-azure-services"></a>Azure 서비스에 연결
 
@@ -74,9 +74,9 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 ## <a name="sample-code-and-reference"></a>샘플 코드 및 참조
 다음 샘플에는 Python용 Azure 관리 라이브러리를 사용하여 일반적인 자동화 작업을 수행하고 자신의 앱에서 사용할 준비가 된 코드가 있습니다.
-- [가상 컴퓨터](python-sdk-azure-virtual-machine-samples.md)
+- [Virtual Machines](python-sdk-azure-virtual-machine-samples.md)
 - [웹앱](python-sdk-azure-web-apps-samples.md)
-- [SQL 데이터베이스](python-sdk-azure-sql-database-samples.md)
+- [SQL Database](python-sdk-azure-sql-database-samples.md)
 
 [참조](/python/api/overview/azure)는 서비스 라이브러리와 관리 라이브러리의 모든 패키지에서 사용할 수 있습니다. 새 기능, 주요 변경 내용 및 이전 버전에서의 마이그레이션 지침은 [릴리스 정보](python-sdk-azure-release-notes.md)에서 사용할 수 있습니다. 
 
