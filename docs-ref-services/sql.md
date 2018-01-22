@@ -1,71 +1,91 @@
 ---
 title: "Python용 Azure SQL Database 라이브러리"
-description: 
-keywords: "Azure, Python, SDK, API, SQL, 데이터베이스, pyodbc"
+description: "ODBC 드라이버와 pyodbc를 사용하여 Azure SQL Database에 연결하거나 관리 API로 Azure SQL 인스턴스를 관리합니다."
 author: lisawong19
 ms.author: liwong
-manager: douge
-ms.date: 07/11/2017
-ms.topic: article
-ms.prod: azure
-ms.technology: azure
+manager: routlaw
+ms.date: 01/09/2018
+ms.topic: reference
 ms.devlang: python
 ms.service: sql-database
-ms.openlocfilehash: b580c5011412bc77fd8fd55b709a305be07e2316
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: baa0e53a77d18dc93241135b5b0fecff5786114c
+ms.sourcegitcommit: ab96bcebe9d5bfa5f32ec5a61b79bd7483fadcad
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 01/17/2018
 ---
-# <a name="azure-sql-database-libraries-for-python"></a><span data-ttu-id="aa1b3-103">Python용 Azure SQL Database 라이브러리</span><span class="sxs-lookup"><span data-stu-id="aa1b3-103">Azure SQL Database libraries for Python</span></span>
+# <a name="azure-sql-database-libraries-for-python"></a><span data-ttu-id="83019-103">Python용 Azure SQL Database 라이브러리</span><span class="sxs-lookup"><span data-stu-id="83019-103">Azure SQL Database libraries for Python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="aa1b3-104">개요</span><span class="sxs-lookup"><span data-stu-id="aa1b3-104">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="83019-104">개요</span><span class="sxs-lookup"><span data-stu-id="83019-104">Overview</span></span>
 
-<span data-ttu-id="aa1b3-105">Microsoft ODBC 드라이버와 pyodbc를 사용하여 Python에서 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview)에 저장된 데이터로 작업합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b3-105">Work with data stored in [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) from Python with the Microsoft ODBC driver and pyodbc.</span></span> 
+<span data-ttu-id="83019-105">pyodbc [ODBC 데이터베이스 드라이버](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers)를 사용하여 Python의 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview)에 저장된 데이터로 작업합니다.</span><span class="sxs-lookup"><span data-stu-id="83019-105">Work with data stored in [Azure SQL Database](/azure/sql-database/sql-database-technical-overview) from Python with the pyodbc [ODBC database driver](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers).</span></span> <span data-ttu-id="83019-106">[빠른 시작](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python)을 보면서 Azure SQL Database에 연결하고 Transact-SQL 문을 사용하여 데이터를 쿼리하고 pyodbc를 사용하여 [샘플](https://github.com/mkleehammer/pyodbc/wiki/Getting-started)을 시작합니다.</span><span class="sxs-lookup"><span data-stu-id="83019-106">View our [quickstart](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python) on connecting to an Azure SQL database and using Transact-SQL statements to query data and getting started [sample](https://github.com/mkleehammer/pyodbc/wiki/Getting-started) with pyodbc.</span></span>
 
-## <a name="client-odbc-driver-and-pyodbc"></a><span data-ttu-id="aa1b3-106">Client ODBC 드라이버 및 pyodbc</span><span class="sxs-lookup"><span data-stu-id="aa1b3-106">Client ODBC driver and pyodbc</span></span>
+## <a name="install-odbc-driver-and-pyodbc"></a><span data-ttu-id="83019-107">ODBC 드라이버 및 pyodbc 설치</span><span class="sxs-lookup"><span data-stu-id="83019-107">Install ODBC driver and pyodbc</span></span>
 
 ```bash
 pip install pyodbc
 ```
-<span data-ttu-id="aa1b3-107">Python 및 데이터베이스 통신 라이브러리 설치에 대한 자세한 내용은 [여기서](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) 찾을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b3-107">More details about installing the python and database communication libraries can be found [here](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries).</span></span>
+<span data-ttu-id="83019-108">Python 및 데이터베이스 통신 라이브러리 설치에 대한 [세부 정보](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries)입니다.</span><span class="sxs-lookup"><span data-stu-id="83019-108">More [details](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries) about installing the python and database communication libraries.</span></span>
 
-### <a name="example"></a><span data-ttu-id="aa1b3-108">예제</span><span class="sxs-lookup"><span data-stu-id="aa1b3-108">Example</span></span>
+## <a name="connect-and-execute-a-sql-query"></a><span data-ttu-id="83019-109">SQL 쿼리 연결 및 실행</span><span class="sxs-lookup"><span data-stu-id="83019-109">Connect and execute a SQL query</span></span>
 
-<span data-ttu-id="aa1b3-109">SQL 데이터베이스에 연결하고 테이블의 모든 레코드를 선택합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b3-109">Connect to a SQL database and select all records in a table.</span></span>
+### <a name="connect-to-a-sql-database"></a><span data-ttu-id="83019-110">SQL 데이터베이스에 연결</span><span class="sxs-lookup"><span data-stu-id="83019-110">Connect to a SQL database</span></span>
 
 ```python
-import pyodbc 
+import pyodbc
 
-SERVER = 'YOUR_SERVER_NAME.database.windows.net'
-DATABASE = 'YOUR_DATABASE_NAME'
-USERNAME = 'YOUR_DB_USERNAME'
-PASSWORD = 'YOUR_DB_PASSWORD'
+server = 'your_server.database.windows.net'
+database = 'your_database'
+username = 'your_username'
+password = 'your_password'
+driver= '{ODBC Driver 13 for SQL Server}'
 
-DRIVER= '{ODBC Driver 13 for SQL Server}'
-cnxn = pyodbc.connect('DRIVER=' + DRIVER + ';PORT=1433;SERVER=' + SERVER +
-    ';PORT=1443;DATABASE=' + DATABASE + ';UID=' + USERNAME + ';PWD=' + PASSWORD)
+cnxn = pyodbc.connect('DRIVER='+driver+';PORT=1433;SERVER='+server+';PORT=1443;DATABASE='+database+';UID='+username+';PWD='+ password)
 cursor = cnxn.cursor()
-selectsql = "SELECT * FROM SALES"  # SALES is an example table name
-cursor.execute(selectsql)
 ```
 
-## <a name="management-api"></a><span data-ttu-id="aa1b3-110">관리 API</span><span class="sxs-lookup"><span data-stu-id="aa1b3-110">Management API</span></span>
+### <a name="execute-a-sql-query"></a><span data-ttu-id="83019-111">SQL 쿼리 실행</span><span class="sxs-lookup"><span data-stu-id="83019-111">Execute a SQL query</span></span>
 
-<span data-ttu-id="aa1b3-111">관리 API를 사용하여 구독의 Azure SQL Database 리소스를 만들고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b3-111">Create and manage Azure SQL Database resources in your subscription with the management API.</span></span> 
+```python
+cursor.execute("SELECT TOP 20 pc.Name as CategoryName, p.name as ProductName FROM [SalesLT].[ProductCategory] pc JOIN [SalesLT].[Product] p ON pc.productcategoryid = p.productcategoryid")
+row = cursor.fetchone()
+while row:
+    print (str(row[0]) + " " + str(row[1]))
+    row = cursor.fetchone()
+```
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="83019-112">pyodbc 샘플</span><span class="sxs-lookup"><span data-stu-id="83019-112">pyodbc sample</span></span>](https://github.com/mkleehammer/pyodbc/wiki/Getting-started)
+
+## <a name="connecting-to-orms"></a><span data-ttu-id="83019-113">ORM에 연결</span><span class="sxs-lookup"><span data-stu-id="83019-113">Connecting to ORMs</span></span>
+
+<span data-ttu-id="83019-114">pyodbc는 [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) 및 [Django](https://github.com/lionheart/django-pyodbc/) 등의 다른 ORM과 함께 작동합니다.</span><span class="sxs-lookup"><span data-stu-id="83019-114">pyodbc works with other ORMs such as [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) and [Django](https://github.com/lionheart/django-pyodbc/).</span></span> 
+
+## <a name="management-apipythonapioverviewazuresqlmanagementlibrary"></a>[<span data-ttu-id="83019-115">관리 API</span><span class="sxs-lookup"><span data-stu-id="83019-115">Management API</span></span>](/python/api/overview/azure/sql/managementlibrary)
+
+<span data-ttu-id="83019-116">관리 API를 사용하여 구독의 Azure SQL Database 리소스를 만들고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="83019-116">Create and manage Azure SQL Database resources in your subscription with the management API.</span></span> 
 
 ```bash
+pip install azure-common
 pip install azure-mgmt-sql
+pip install azure-mgmt-resource
 ```
 
-### <a name="example"></a><span data-ttu-id="aa1b3-112">예제</span><span class="sxs-lookup"><span data-stu-id="aa1b3-112">Example</span></span>
+## <a name="example"></a><span data-ttu-id="83019-117">예</span><span class="sxs-lookup"><span data-stu-id="83019-117">Example</span></span>
 
-<span data-ttu-id="aa1b3-113">SQL Database 리소스를 만들고 방화벽 규칙을 사용하여 IP 주소 범위에 대한 액세스를 제한합니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b3-113">Create a SQL Database resource and restrict access to a range of IP addresses using a firewall rule.</span></span>
+<span data-ttu-id="83019-118">SQL Database 리소스를 만들고 방화벽 규칙을 사용하여 IP 주소 범위에 대한 액세스를 제한합니다.</span><span class="sxs-lookup"><span data-stu-id="83019-118">Create a SQL Database resource and restrict access to a range of IP addresses using a firewall rule.</span></span>
 
 ```python
 RESOURCE_GROUP = 'YOUR_RESOURCE_GROUP_NAME'
 LOCATION = 'eastus'  # example Azure availability zone, should match resource group
 SQL_DB = 'YOUR_SQLDB_NAME'
+
+# create resource client
+resource_client = get_client_from_cli_profile(ResourceManagementClient)
+# create resource group
+resource_client.resource_groups.create_or_update(RESOURCE_GROUP, {'location': LOCATION})
+
+sql_client = get_client_from_cli_profile(SqlManagementClient)
 
 # Create a SQL server
 server = sql_client.servers.create_or_update(
@@ -89,14 +109,5 @@ firewall_rule = sql_client.firewall_rules.create_or_update(
 )
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="aa1b3-114">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="aa1b3-114">Explore the Management APIs</span></span>](/python/api/overview/azure/sql/managementlibrary)
+> [<span data-ttu-id="83019-119">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="83019-119">Explore the Management APIs</span></span>](/python/api/overview/azure/sql/managementlibrary)
 
-## <a name="samples"></a><span data-ttu-id="aa1b3-115">샘플</span><span class="sxs-lookup"><span data-stu-id="aa1b3-115">Samples</span></span>
-
-* <span data-ttu-id="aa1b3-116">[SQL 데이터베이스 만들기 및 관리][1]</span><span class="sxs-lookup"><span data-stu-id="aa1b3-116">[Create and manage SQL databases][1]</span></span>    
-* <span data-ttu-id="aa1b3-117">[Python을 사용하여 데이터 연결 및 쿼리][2]</span><span class="sxs-lookup"><span data-stu-id="aa1b3-117">[Use Python to connect and query data][2]</span></span>   
-
-[1]: https://github.com/Azure-Samples/sql-database-python-manage
-[2]: https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python
-
-<span data-ttu-id="aa1b3-118">Azure SQL 데이터베이스 샘플의 [전체 목록](https://azure.microsoft.com/resources/samples/?platform=python&term=SQL)을 봅니다.</span><span class="sxs-lookup"><span data-stu-id="aa1b3-118">View the [complete list](https://azure.microsoft.com/resources/samples/?platform=python&term=SQL) of Azure SQL database samples.</span></span> 
