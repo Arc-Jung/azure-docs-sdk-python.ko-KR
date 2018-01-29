@@ -11,17 +11,17 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: storage
-ms.openlocfilehash: 64465964d32934a6a45dec44cb92a0a8a84b9c37
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: e00e821ff3e806a994fa8d96aae50c35eeeb8392
+ms.sourcegitcommit: 5ab15a7214082d16f339a13e4ae7735b3a57a9aa
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 01/19/2018
 ---
 # <a name="azure-storage-libraries-for-python"></a>Python용 Azure Storage 라이브러리
 
 ## <a name="overview"></a>개요
-- [Azure Blob 저장소](https://docs.microsoft.com/en-us/azure/storage/storage-python-how-to-use-blob-storage)에서 개체와 파일을 읽고 씁니다.
-- [Azure 큐 저장소](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)를 사용하여 클라우드에 연결된 응용 프로그램 간에 메시지를 보내고 받습니다.
+- [Azure Blob 저장소](https://docs.microsoft.com/en-us/azure/storage/storage-python-how-to-use-blob-storage)에서 개체와 파일 읽기 및 쓰기
+- [Azure 큐 저장소](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-queue-storage)를 사용하여 클라우드에 연결된 응용 프로그램 간에 메시지 보내기 및 받기
 - [Azure 테이블 저장소](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-table-storage)를 사용하여 대규모 구조적 데이터를 읽고 씁니다. 
 - [Azure 파일 저장소](https://docs.microsoft.com/azure/storage/storage-python-how-to-use-file-storage)를 사용하여 앱 간에 저장소를 공유합니다.
 
@@ -31,8 +31,10 @@ ms.lasthandoff: 08/18/2017
 
 ### <a name="client"></a>클라이언트
 
+Azure Storage 클라이언트 라이브러리는 Blob, 파일, 큐 및 테이블의 4개 패키지로 구성되어 있습니다. Blob 패키지를 설치하려면 다음을 실행합니다.
+
 ```bash
-pip install azure-storage
+pip install azure-storage-blob
 ```
 
 ### <a name="management"></a>관리
@@ -41,10 +43,9 @@ pip install azure-storage
 pip install azure-mgmt-storage
 ```
 
-## <a name="example"></a>예제
+## <a name="example"></a>예
 ```python
-storage_client = CloudStorageAccount(storage_account_name, storage_key)
-blob_service = storage_client.create_block_blob_service()
+blob_service = BlockBlobService(account_name, account_key)
 
 blob_service.create_container(
     'mycontainername',
@@ -65,8 +66,8 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 | | |
 |--|--|
-| [Python에서 Azure Blob Storage 시작(영문)](https://azure.microsoft.com/resources/samples/storage-blob-python-getting-started/) | Azure Storage에서 파일과 개체를 생성, 판독, 업데이트, 액세스 제한 및 삭제합니다. |
-| [Python에서 Azure Queue Storage 시작(영문)](https://azure.microsoft.com/resources/samples/storage-queue-python-getting-started/) | Azure Storage 큐에서 메시지를 삽입, 피킹, 검색 및 삭제합니다. | 
+| [Python에서 Azure Blob Storage 시작(영문)](https://docs.microsoft.com/en-us/azure/storage/blobs/storage-python-how-to-use-blob-storage) | Azure Storage에서 파일과 개체를 생성, 판독, 업데이트, 액세스 제한 및 삭제합니다. |
+| [Python에서 Azure Queue Storage 시작(영문)](https://docs.microsoft.com/en-us/azure/storage/queues/storage-python-how-to-use-queue-storage) | Azure Storage 큐에서 메시지를 삽입, 피킹, 검색 및 삭제합니다. | 
 | [Azure Storage 계정 관리(영문)](https://azure.microsoft.com/resources/samples/storage-python-manage) | 저장소 계정을 생성, 업데이트 및 삭제합니다. 저장소 계정 액세스 키를 검색하고 다시 생성합니다.
 
 앱에서 사용할 수 있는 [Python 샘플 코드](https://azure.microsoft.com/resources/samples/?platform=python)를 추가로 탐색합니다.
