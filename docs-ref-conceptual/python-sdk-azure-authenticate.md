@@ -10,11 +10,11 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5c4cf1dee7d9864e809f2797ad49ce78886a6f66
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.openlocfilehash: 271722eee1ef982d1f091b3d3af29069917f3e17
+ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Python용 Azure 관리 라이브러리를 사용하여 인증
 
@@ -118,7 +118,7 @@ client = ComputeManagementClient(credentials, subscription_id)
 > [참고!] 독립적인 Azure 클라우드를 사용하는 경우 관리 클라이언트를 만들 때 적절한 기본 URL도 지정해야 합니다(`msrestazure.azure_cloud`의 상수를 통해). 예를 들어 Azure 중국 클라우드의 경우 다음과 같습니다.
 > ```python
 > client = ComputeManagementClient(credentials, subscription_id,
->     base_url=AZURE_CHINA_CLOUD.endpoints.active_directory_resource_id)
+>     base_url=AZURE_CHINA_CLOUD.endpoints.resource_manager)
 > ```
 
 

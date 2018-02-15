@@ -1,4 +1,4 @@
-﻿---
+---
 title: "Python용 Azure 라이브러리"
 description: "Python용 Azure 관리 및 서비스 라이브러리에 대한 개요입니다."
 keywords: Azure, Python, SDK, API
@@ -11,15 +11,15 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: 7c069f849007ea2c02cf4347ce213dd033dcd68b
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.openlocfilehash: e0c7b4acd1aa57d141f4407c0ba483a1529d2b35
+ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 02/14/2018
 ---
 # <a name="azure-libraries-for-python"></a>Python용 Azure 라이브러리
 
-Python용 Azure 라이브러리를 사용하면 Azure 서비스를 사용하고 응용 프로그램 코드에서 Azure 리소스를 관리할 수 있습니다. Python 프로젝트에서 라이브러리를 사용하기 위해 [PyPI](python-sdk-azure-install.md)에서 라이브러리를 설치할 수 있습니다.
+Python용 Azure 라이브러리를 사용하면 Azure 서비스를 사용하고 응용 프로그램 코드에서 Azure 리소스를 관리할 수 있습니다. 
 
 ## <a name="manage-azure-resources"></a>Azure 리소스 관리
 
@@ -45,7 +45,7 @@ server = sql_client.servers.create_or_update(
 )
 ```
 
-라이브러리의 전체 목록 및 프로젝트로 가져오는 방법에 대한 [설치 지침](python-sdk-azure-install.md)을 검토한 다음 [시작 문서](python-sdk-azure-get-started.yml)를 참조하여 인증을 설정하고 자신의 Azure 구독에 대한 샘플 코드를 실행합니다 .
+라이브러리의 전체 목록 및 프로젝트로 가져오는 방법에 대한 [설치 지침](/azure/python-how-to-install)을 검토한 다음 [시작 문서](python-sdk-azure-get-started.yml)를 참조하여 인증을 설정하고 자신의 Azure 구독에 대한 샘플 코드를 실행합니다 .
 
 ## <a name="connect-to-azure-services"></a>Azure 서비스에 연결
 
@@ -73,7 +73,7 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 ```
 
 ## <a name="sample-code-and-reference"></a>샘플 코드 및 참조
-다음 샘플은 Python용 Azure 관리 라이브러리를 사용한 일반적인 자동화 작업을 다루고 있고, 당신의 앱에 사용할 수 있는 코드도 있습니다.
+다음 샘플에는 Python용 Azure 관리 라이브러리를 사용하여 일반적인 자동화 작업을 수행하고 자신의 앱에서 사용할 준비가 된 코드가 있습니다.
 - [Virtual Machines](python-sdk-azure-virtual-machine-samples.md)
 - [웹앱](python-sdk-azure-web-apps-samples.md)
 - [SQL Database](python-sdk-azure-sql-database-samples.md)

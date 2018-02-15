@@ -3,6 +3,8 @@
   items:
     - name: 개요
       href: python-sdk-azure-overview.md
+    - name: 설치
+      href: /azure/python-how-to-install
     - name: 도구
       href: python-azure-tools.md
     - name: Python 모듈 시작
@@ -25,7 +27,7 @@
           href: 'https://docs.microsoft.com/azure/app-service-web/app-service-web-tutorial-docker-python-postgresql-app'
     - name: 샘플
       items:
-        - name: 가상 컴퓨터
+        - name: 가상 머신
           href: python-sdk-azure-virtual-machine-samples.md
         - name: 웹 앱
           href: python-sdk-azure-web-apps-samples.md
