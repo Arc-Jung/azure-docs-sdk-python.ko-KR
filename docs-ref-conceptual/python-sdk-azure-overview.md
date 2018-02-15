@@ -11,21 +11,21 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: 
-ms.openlocfilehash: 7c069f849007ea2c02cf4347ce213dd033dcd68b
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.openlocfilehash: e0c7b4acd1aa57d141f4407c0ba483a1529d2b35
+ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 02/14/2018
 ---
-# <a name="azure-libraries-for-python"></a><span data-ttu-id="0d9d6-104">Python용 Azure 라이브러리</span><span class="sxs-lookup"><span data-stu-id="0d9d6-104">Azure libraries for Python</span></span>
+# <a name="azure-libraries-for-python"></a><span data-ttu-id="21a88-104">Python용 Azure 라이브러리</span><span class="sxs-lookup"><span data-stu-id="21a88-104">Azure libraries for Python</span></span>
 
-<span data-ttu-id="0d9d6-105">Python용 Azure 라이브러리를 사용하면 Azure 서비스를 사용하고 응용 프로그램 코드에서 Azure 리소스를 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-105">The Azure libraries for Python let you use Azure services and manage Azure resources from your application code.</span></span> <span data-ttu-id="0d9d6-106">라이브러리는 Python 프로젝트에서 사용하기 위해 [PyPI](python-sdk-azure-install.md)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-106">The libraries are available in [PyPI](python-sdk-azure-install.md) for use in your Python projects.</span></span>
+<span data-ttu-id="21a88-105">Python용 Azure 라이브러리를 사용하면 Azure 서비스를 사용하고 응용 프로그램 코드에서 Azure 리소스를 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-105">The Azure libraries for Python let you use Azure services and manage Azure resources from your application code.</span></span> 
 
-## <a name="manage-azure-resources"></a><span data-ttu-id="0d9d6-107">Azure 리소스 관리</span><span class="sxs-lookup"><span data-stu-id="0d9d6-107">Manage Azure resources</span></span>
+## <a name="manage-azure-resources"></a><span data-ttu-id="21a88-106">Azure 리소스 관리</span><span class="sxs-lookup"><span data-stu-id="21a88-106">Manage Azure resources</span></span>
 
-<span data-ttu-id="0d9d6-108">Python용 Azure 라이브러리를 사용하여 Python 응용 프로그램에서 Azure 리소스를 만들고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-108">Create and manage Azure resources from Python applications using the Azure libraries for Python.</span></span>
+<span data-ttu-id="21a88-107">Python용 Azure 라이브러리를 사용하여 Python 응용 프로그램에서 Azure 리소스를 만들고 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-107">Create and manage Azure resources from Python applications using the Azure libraries for Python.</span></span>
 
-<span data-ttu-id="0d9d6-109">예를 들어 SQL Server 인스턴스를 만들려면 다음 코드를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-109">For example, to create a SQL Server instance, you can use the following code:</span></span>
+<span data-ttu-id="21a88-108">예를 들어 SQL Server 인스턴스를 만들려면 다음 코드를 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-108">For example, to create a SQL Server instance, you can use the following code:</span></span>
 
 ```python
 sql_client = SqlManagementClient(
@@ -45,13 +45,13 @@ server = sql_client.servers.create_or_update(
 )
 ```
 
-<span data-ttu-id="0d9d6-110">라이브러리의 전체 목록 및 프로젝트로 가져오는 방법에 대한 [설치 지침](python-sdk-azure-install.md)을 검토한 다음 [시작 문서](python-sdk-azure-get-started.yml)를 참조하여 인증을 설정하고 자신의 Azure 구독에 대한 샘플 코드를 실행합니다 .</span><span class="sxs-lookup"><span data-stu-id="0d9d6-110">Review the [install instructions](python-sdk-azure-install.md) for a full list of the libraries and how to import them into your projects and then read the [get started article](python-sdk-azure-get-started.yml) to set up your authentication and run sample code against your own Azure subscription.</span></span>
+<span data-ttu-id="21a88-109">라이브러리의 전체 목록 및 프로젝트로 가져오는 방법에 대한 [설치 지침](/azure/python-how-to-install)을 검토한 다음 [시작 문서](python-sdk-azure-get-started.yml)를 참조하여 인증을 설정하고 자신의 Azure 구독에 대한 샘플 코드를 실행합니다 .</span><span class="sxs-lookup"><span data-stu-id="21a88-109">Review the [install instructions](/azure/python-how-to-install) for a full list of the libraries and how to import them into your projects and then read the [get started article](python-sdk-azure-get-started.yml) to set up your authentication and run sample code against your own Azure subscription.</span></span>
 
-## <a name="connect-to-azure-services"></a><span data-ttu-id="0d9d6-111">Azure 서비스에 연결</span><span class="sxs-lookup"><span data-stu-id="0d9d6-111">Connect to Azure services</span></span>
+## <a name="connect-to-azure-services"></a><span data-ttu-id="21a88-110">Azure 서비스에 연결</span><span class="sxs-lookup"><span data-stu-id="21a88-110">Connect to Azure services</span></span>
 
-<span data-ttu-id="0d9d6-112">Python 라이브러리를 사용하여 Azure 내에서 리소스를 만들고 관리하는 것 외에도, Python 라이브러리를 사용하여 앱에서 해당 리소스를 연결하여 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-112">In addition to using Python libraries to create and manage resources within Azure, you can also use Python libraries to connect and use those resources in your apps.</span></span> <span data-ttu-id="0d9d6-113">예를 들어 SQL Database 테이블을 업데이트하거나 Azure Storage에 파일을 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-113">For example, you might update a table SQL Database or store files in Azure Storage.</span></span> <span data-ttu-id="0d9d6-114">라이브러리 전체 목록에서 특정 서비스에 필요한 라이브러리를 선택하고, Python 개발자 센터를 방문하여 앱에서 사용하는 데 도움이 되는 자습서와 샘플 코드를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-114">Select the library you need for a particular service from the complete list of libraries and visit the Python developer center for tutorials and sample code for help using them in your apps.</span></span>
+<span data-ttu-id="21a88-111">Python 라이브러리를 사용하여 Azure 내에서 리소스를 만들고 관리하는 것 외에도, Python 라이브러리를 사용하여 앱에서 해당 리소스를 연결하여 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-111">In addition to using Python libraries to create and manage resources within Azure, you can also use Python libraries to connect and use those resources in your apps.</span></span> <span data-ttu-id="21a88-112">예를 들어 SQL Database 테이블을 업데이트하거나 Azure Storage에 파일을 저장할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-112">For example, you might update a table SQL Database or store files in Azure Storage.</span></span> <span data-ttu-id="21a88-113">라이브러리 전체 목록에서 특정 서비스에 필요한 라이브러리를 선택하고, Python 개발자 센터를 방문하여 앱에서 사용하는 데 도움이 되는 자습서와 샘플 코드를 참조합니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-113">Select the library you need for a particular service from the complete list of libraries and visit the Python developer center for tutorials and sample code for help using them in your apps.</span></span>
 
-<span data-ttu-id="0d9d6-115">예를 들어 Blob에 간단한 HTML 페이지를 업로드하고 URL을 얻으려면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-115">For example, to upload a simple HTML page on a blob and get the Url:</span></span>
+<span data-ttu-id="21a88-114">예를 들어 Blob에 간단한 HTML 페이지를 업로드하고 URL을 얻으려면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-114">For example, to upload a simple HTML page on a blob and get the Url:</span></span>
 
 ```python
 storage_client = CloudStorageAccount(storage_account_name, storage_key)
@@ -72,14 +72,14 @@ blob_service.create_blob_from_bytes(
 print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 ```
 
-## <a name="sample-code-and-reference"></a><span data-ttu-id="0d9d6-116">샘플 코드 및 참조</span><span class="sxs-lookup"><span data-stu-id="0d9d6-116">Sample code and reference</span></span>
-<span data-ttu-id="0d9d6-117">다음 샘플에는 Python용 Azure 관리 라이브러리를 사용하여 일반적인 자동화 작업을 수행하고 자신의 앱에서 사용할 준비가 된 코드가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-117">The following samples cover common automation tasks with the Azure management libraries for Python and have code ready to use in your own apps:</span></span>
-- [<span data-ttu-id="0d9d6-118">Virtual Machines</span><span class="sxs-lookup"><span data-stu-id="0d9d6-118">Virtual Machines</span></span>](python-sdk-azure-virtual-machine-samples.md)
-- [<span data-ttu-id="0d9d6-119">웹앱</span><span class="sxs-lookup"><span data-stu-id="0d9d6-119">Web apps</span></span>](python-sdk-azure-web-apps-samples.md)
-- [<span data-ttu-id="0d9d6-120">SQL Database</span><span class="sxs-lookup"><span data-stu-id="0d9d6-120">SQL Database</span></span>](python-sdk-azure-sql-database-samples.md)
+## <a name="sample-code-and-reference"></a><span data-ttu-id="21a88-115">샘플 코드 및 참조</span><span class="sxs-lookup"><span data-stu-id="21a88-115">Sample code and reference</span></span>
+<span data-ttu-id="21a88-116">다음 샘플에는 Python용 Azure 관리 라이브러리를 사용하여 일반적인 자동화 작업을 수행하고 자신의 앱에서 사용할 준비가 된 코드가 있습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-116">The following samples cover common automation tasks with the Azure management libraries for Python and have code ready to use in your own apps:</span></span>
+- [<span data-ttu-id="21a88-117">Virtual Machines</span><span class="sxs-lookup"><span data-stu-id="21a88-117">Virtual Machines</span></span>](python-sdk-azure-virtual-machine-samples.md)
+- [<span data-ttu-id="21a88-118">웹앱</span><span class="sxs-lookup"><span data-stu-id="21a88-118">Web apps</span></span>](python-sdk-azure-web-apps-samples.md)
+- [<span data-ttu-id="21a88-119">SQL Database</span><span class="sxs-lookup"><span data-stu-id="21a88-119">SQL Database</span></span>](python-sdk-azure-sql-database-samples.md)
 
-<span data-ttu-id="0d9d6-121">[참조](/python/api/overview/azure)는 서비스 라이브러리와 관리 라이브러리의 모든 패키지에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-121">A [reference](/python/api/overview/azure) is available for all packages in both the service an management libraries.</span></span> <span data-ttu-id="0d9d6-122">새 기능, 주요 변경 내용 및 이전 버전에서의 마이그레이션 지침은 [릴리스 정보](python-sdk-azure-release-notes.md)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-122">New features, breaking changes, and migration instructions from previous versions are available in the [release notes](python-sdk-azure-release-notes.md).</span></span> 
+<span data-ttu-id="21a88-120">[참조](/python/api/overview/azure)는 서비스 라이브러리와 관리 라이브러리의 모든 패키지에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-120">A [reference](/python/api/overview/azure) is available for all packages in both the service an management libraries.</span></span> <span data-ttu-id="21a88-121">새 기능, 주요 변경 내용 및 이전 버전에서의 마이그레이션 지침은 [릴리스 정보](python-sdk-azure-release-notes.md)에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-121">New features, breaking changes, and migration instructions from previous versions are available in the [release notes](python-sdk-azure-release-notes.md).</span></span> 
 
-## <a name="get-help-and-give-feedback"></a><span data-ttu-id="0d9d6-123">도움말 가져오기 및 피드백 제공</span><span class="sxs-lookup"><span data-stu-id="0d9d6-123">Get help and give feedback</span></span>
+## <a name="get-help-and-give-feedback"></a><span data-ttu-id="21a88-122">도움말 가져오기 및 피드백 제공</span><span class="sxs-lookup"><span data-stu-id="21a88-122">Get help and give feedback</span></span>
 
-<span data-ttu-id="0d9d6-124">[Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python)에서 커뮤니티에 질문을 게시하고 [프로젝트 GitHub](https://github.com/Azure/azure-sdk-for-python)에서 SDK에 대한 문제를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="0d9d6-124">Post questions to the community on [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python) and open issues against the SDK on the [project GitHub](https://github.com/Azure/azure-sdk-for-python).</span></span>
+<span data-ttu-id="21a88-123">[Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python)에서 커뮤니티에 질문을 게시하고 [프로젝트 GitHub](https://github.com/Azure/azure-sdk-for-python)에서 SDK에 대한 문제를 엽니다.</span><span class="sxs-lookup"><span data-stu-id="21a88-123">Post questions to the community on [Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python) and open issues against the SDK on the [project GitHub](https://github.com/Azure/azure-sdk-for-python).</span></span>
