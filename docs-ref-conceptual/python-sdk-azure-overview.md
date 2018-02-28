@@ -73,7 +73,7 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 ```
 
 ## <a name="sample-code-and-reference"></a>샘플 코드 및 참조
-다음 샘플에는 Python용 Azure 관리 라이브러리를 사용하여 일반적인 자동화 작업을 수행하고 자신의 앱에서 사용할 준비가 된 코드가 있습니다.
+다음 샘플은 Python용 Azure 관리 라이브러리를 사용한 일반적인 자동화 작업을 다루며 앱에 바로 사용할 수 있는 코드도 있습니다.
 - [Virtual Machines](python-sdk-azure-virtual-machine-samples.md)
 - [웹앱](python-sdk-azure-web-apps-samples.md)
 - [SQL Database](python-sdk-azure-sql-database-samples.md)
