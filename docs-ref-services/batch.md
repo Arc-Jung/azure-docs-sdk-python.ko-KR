@@ -11,31 +11,31 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: f954499888cbc3dfe4793a3e769b85ceb5de71d2
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: de5f3a98b1712ff9bdcc417daf10719178819364
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="azure-batch-libraries-for-python"></a><span data-ttu-id="51135-104">Python용 Azure Batch 라이브러리</span><span class="sxs-lookup"><span data-stu-id="51135-104">Azure Batch libraries for python</span></span>
+# <a name="azure-batch-libraries-for-python"></a><span data-ttu-id="014ca-104">Python용 Azure Batch 라이브러리</span><span class="sxs-lookup"><span data-stu-id="014ca-104">Azure Batch libraries for python</span></span>
 
-## <a name="overview"></a><span data-ttu-id="51135-105">개요</span><span class="sxs-lookup"><span data-stu-id="51135-105">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="014ca-105">개요</span><span class="sxs-lookup"><span data-stu-id="014ca-105">Overview</span></span>
 
-<span data-ttu-id="51135-106">[Azure 배치](/azure/batch/batch-technical-overview)를 사용하여 클라우드에서 대규모 병렬 및 고성능 컴퓨팅 응용 프로그램을 효율적으로 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="51135-106">Run large-scale parallel and high-performance computing applications efficiently in the cloud with [Azure Batch](/azure/batch/batch-technical-overview).</span></span>   
+<span data-ttu-id="014ca-106">[Azure Batch](/azure/batch/batch-technical-overview)를 사용하여 클라우드에서 대규모 병렬 및 고성능 컴퓨팅 응용 프로그램을 효율적으로 실행합니다.</span><span class="sxs-lookup"><span data-stu-id="014ca-106">Run large-scale parallel and high-performance computing applications efficiently in the cloud with [Azure Batch](/azure/batch/batch-technical-overview).</span></span>   
 
-<span data-ttu-id="51135-107">Azure 배치를 시작하려면 [Azure Portal에서 배치 계정 만들기](/azure/batch/batch-account-create-portal)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="51135-107">To get started with Azure Batch, see [Create a Batch account with the Azure portal](/azure/batch/batch-account-create-portal).</span></span>
+<span data-ttu-id="014ca-107">Azure Batch를 시작하려면 [Azure Portal에서 Batch 계정 만들기](/azure/batch/batch-account-create-portal)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="014ca-107">To get started with Azure Batch, see [Create a Batch account with the Azure portal](/azure/batch/batch-account-create-portal).</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="51135-108">라이브러리 설치</span><span class="sxs-lookup"><span data-stu-id="51135-108">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="014ca-108">라이브러리 설치</span><span class="sxs-lookup"><span data-stu-id="014ca-108">Install the libraries</span></span>
 
-## <a name="client-library"></a><span data-ttu-id="51135-109">클라이언트 라이브러리</span><span class="sxs-lookup"><span data-stu-id="51135-109">Client library</span></span>
-<span data-ttu-id="51135-110">Azure 배치 클라이언트 라이브러리를 사용하여 계산 노드와 풀을 구성하고, 태스크를 정의하고 작업에서 실행되도록 구성하고, 작업 실행을 제어하고 모니터링하도록 작업 관리자를 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="51135-110">The Azure Batch client libraries let you configure compute nodes and pools, define tasks and configure them to run in jobs, and set up a job manager to control and monitor job execution.</span></span> <span data-ttu-id="51135-111">이러한 개체를 사용하여 대규모 병렬 계산 솔루션을 실행하는 방법에 대해 [자세히 알아보세요](/azure/batch/batch-api-basics).</span><span class="sxs-lookup"><span data-stu-id="51135-111">[Learn more](/azure/batch/batch-api-basics) about using these objects to run large-scale parallel compute solutions.</span></span>
+## <a name="client-library"></a><span data-ttu-id="014ca-109">클라이언트 라이브러리</span><span class="sxs-lookup"><span data-stu-id="014ca-109">Client library</span></span>
+<span data-ttu-id="014ca-110">Azure Batch 클라이언트 라이브러리를 사용하여 계산 노드와 풀을 구성하고, 태스크를 정의하고 작업에서 실행되도록 구성하고, 작업 실행을 제어하고 모니터링하도록 작업 관리자를 설정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="014ca-110">The Azure Batch client libraries let you configure compute nodes and pools, define tasks and configure them to run in jobs, and set up a job manager to control and monitor job execution.</span></span> <span data-ttu-id="014ca-111">이러한 개체를 사용하여 대규모 병렬 계산 솔루션을 실행하는 방법에 대해 [자세히 알아보세요](/azure/batch/batch-api-basics).</span><span class="sxs-lookup"><span data-stu-id="014ca-111">[Learn more](/azure/batch/batch-api-basics) about using these objects to run large-scale parallel compute solutions.</span></span>
 
 ```bash
 pip install azure-batch
 ```
-### <a name="example"></a><span data-ttu-id="51135-112">예제</span><span class="sxs-lookup"><span data-stu-id="51135-112">Example</span></span>
+### <a name="example"></a><span data-ttu-id="014ca-112">예</span><span class="sxs-lookup"><span data-stu-id="014ca-112">Example</span></span>
 
-<span data-ttu-id="51135-113">배치 계정에 Linux 계산 노드 풀을 설정하려면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="51135-113">Set up a pool of Linux compute nodes in a batch account:</span></span>
+<span data-ttu-id="014ca-113">배치 계정에 Linux 계산 노드 풀을 설정하려면 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="014ca-113">Set up a pool of Linux compute nodes in a batch account:</span></span>
 
 ```python
 # create the batch client for an account using its URI and keys
@@ -57,17 +57,17 @@ new_pool.virtual_machine_configuration = vmc
 client.pool.add(new_pool)
 ```
 
-## <a name="management-api"></a><span data-ttu-id="51135-114">관리 API</span><span class="sxs-lookup"><span data-stu-id="51135-114">Management API</span></span>
-<span data-ttu-id="51135-115">Azure 배치 관리 라이브러리를 사용하여 배치 계정을 만들고 삭제하고, 배치 계정 키를 읽고 다시 생성하며, 배치 계정 저장소를 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="51135-115">Use the Azure Batch management libraries to create and delete batch accounts, read and regenerate batch account keys, and manage batch account storage.</span></span>
+## <a name="management-api"></a><span data-ttu-id="014ca-114">관리 API</span><span class="sxs-lookup"><span data-stu-id="014ca-114">Management API</span></span>
+<span data-ttu-id="014ca-115">Azure Batch 관리 라이브러리를 사용하여 Batch 계정을 만들고 삭제하고, Batch 계정 키를 읽고 다시 생성하며, Batch 계정 저장소를 관리합니다.</span><span class="sxs-lookup"><span data-stu-id="014ca-115">Use the Azure Batch management libraries to create and delete batch accounts, read and regenerate batch account keys, and manage batch account storage.</span></span>
 
 ```bash
 pip install azure-mgmt-batch
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="51135-116">클라이언트 API 탐색</span><span class="sxs-lookup"><span data-stu-id="51135-116">Explore the Client APIs</span></span>](/python/api/overview/azure/batch/clientlibrary)
+> [<span data-ttu-id="014ca-116">클라이언트 API 탐색</span><span class="sxs-lookup"><span data-stu-id="014ca-116">Explore the Client APIs</span></span>](/python/api/overview/azure/batch/client)
 
-### <a name="example"></a><span data-ttu-id="51135-117">예제</span><span class="sxs-lookup"><span data-stu-id="51135-117">Example</span></span>
-<span data-ttu-id="51135-118">Azure 배치 계정을 만들고, 새 응용 프로그램 및 Azure 저장소 계정을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="51135-118">Create an Azure Batch account and configure a new application and Azure storage account for it.</span></span>
+### <a name="example"></a><span data-ttu-id="014ca-117">예</span><span class="sxs-lookup"><span data-stu-id="014ca-117">Example</span></span>
+<span data-ttu-id="014ca-118">Azure Batch 계정을 만들고, 새 응용 프로그램 및 Azure 저장소 계정을 구성합니다.</span><span class="sxs-lookup"><span data-stu-id="014ca-118">Create an Azure Batch account and configure a new application and Azure storage account for it.</span></span>
 
 ```python
 from azure.mgmt.batch import BatchManagementClient
@@ -105,4 +105,4 @@ creating.wait()
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="51135-119">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="51135-119">Explore the Management APIs</span></span>](/python/api/overview/azure/batch/managementlibrary)
+> [<span data-ttu-id="014ca-119">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="014ca-119">Explore the Management APIs</span></span>](/python/api/overview/azure/batch/management)
