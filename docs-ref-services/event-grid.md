@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: a50a203a0733f25f2a88d6f4a43c6bddc388d3e7
-ms.sourcegitcommit: 79afc8a1b427e26ecea7bdc0b7b3c898f143360f
+ms.openlocfilehash: 299b50ce8366d0c49ade28dfece98d6696a4f9ef
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="event-grid-libraries-for-python"></a>Python용 Event Grid 라이브러리
 
@@ -27,7 +27,7 @@ Azure Event Grid는 게시-구독 모델을 사용하여 균일한 이벤트 소
 pip install azure-mgmt-eventgrid
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 다음 예제에서는 사용자 지정 토픽을 만들고, 토픽을 구독하고, 이벤트를 트리거하여 결과를 봅니다. RequestBin은 오픈 소스이면서 타사 도구로, 이 도구를 통해 끝점을 만들고 끝점에 전송된 요청을 볼 수 있습니다. [RequestBin](https://requestb.in/)으로 이동하고 **RequestBin 만들기**를 클릭합니다. 토픽을 구독할 때 필요하기 때문에 bin URL을 복사합니다.
 
 ```python
@@ -85,5 +85,5 @@ az group delete --name gridResourceGroup
 ```
 
 > [!div class="nextstepaction"]
-> [관리 API 탐색](/python/api/overview/azure/eventgrid/managementlibrary)
+> [관리 API 탐색](/python/api/overview/azure/eventgrid/management)
 

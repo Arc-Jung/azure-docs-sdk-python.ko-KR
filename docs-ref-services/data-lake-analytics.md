@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 9200eb8b01f6326f1a169c48ee3f842947177647
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: d779aca1f3a9e14f275385f93054a8e2f9c0c689
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-data-lake-analytics-libraries-for-python"></a>Python용 Azure Data Lake Analytics 라이브러리
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/18/2017
 pip install azure-mgmt-datalake-analytics
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 이 예제에서는 Data Lake Analytics 계정을 만들고 작업을 제출하는 방법을 보여 줍니다. 
 
 ```python
@@ -117,7 +117,7 @@ jobResult = adlaJobClient.job.create(
 ```
 
 > [!div class="nextstepaction"]
-> [관리 API 탐색](/python/api/overview/azure/datalakeanalytics/managementlibrary)
+> [관리 API 탐색](/python/api/overview/azure/datalakeanalytics/management)
 
 ## <a name="samples"></a>샘플
 [Azure Data Lake Analytics 관리](https://docs.microsoft.com/azure/data-lake-analytics/data-lake-analytics-manage-use-python-sdk)

@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: postgresql
-ms.openlocfilehash: e184efc276fb4e6d86504ab44e47340ce72e7006
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: cad5995072d5040764986765d9a900f46f5141ec
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 #<a name="azure-postgresql-libraries-for-python"></a>Python용 Azure PostgreSQL 라이브러리
 
@@ -27,7 +27,7 @@ ODBC 드라이버 및 pyodbc를 사용하여 데이터베이스에 연결하고 
 ## <a name="client-odbc-driver-and-pyodbc"></a>Client ODBC 드라이버 및 pyodbc
 Azure Database for PostgreSQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 Microsoft [ODBC 드라이버 및 pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries)입니다.
 
-### <a name="example"></a>예제 
+### <a name="example"></a>예 
 
 Azure Database for PostgreSQL에 연결하고 `SALES` 테이블의 모든 레코드를 선택합니다. Azure Portal에서 데이터베이스에 대한 ODBC 연결 문자열을 가져올 수 있습니다.
 
@@ -58,7 +58,7 @@ pip install azure-mgmt-rdbms
 
 관리 클라이언트에서 인증할 자격 증명을 얻는 방법에 대한 자세한 내용은 [Python SDK 인증](https://docs.microsoft.com/python/azure/python-sdk-azure-authenticate) 페이지를 참조하세요.
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 이 예제에서는 기존 Postgres 서버에 새 Postgres 데이터베이스를 만듭니다.
 ```python
 from azure.mgtm.rdbms.postgresql import PostgreSQLManagementClient
@@ -77,5 +77,5 @@ db = db_creation_poller.result()
 ```
 
 > [!div class="nextstepaction"]
-> [관리 API 탐색](/python/api/overview/azure/postgresql/managementlibrary)
+> [관리 API 탐색](/python/api/overview/azure/postgresql/management)
 

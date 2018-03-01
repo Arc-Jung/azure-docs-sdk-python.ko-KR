@@ -9,11 +9,11 @@ ms.date: 06/26/2017
 ms.topic: article
 ms.devlang: python
 ms.service: redis
-ms.openlocfilehash: 3ba8d972e91fad229c1489800edeca08760254e6
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: c2f8ebcbcbd7b71c1fa96e46a8148a3c0b88877f
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-redis-cache-libraries-for-python"></a>Python용 Azure Redis Cache 라이브러리
 
@@ -34,7 +34,7 @@ pip install redis
 pip install azure-mgmt-redis
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 
 다음 예제에서는 새 Redis 캐시를 만듭니다.
 
@@ -60,5 +60,5 @@ redis_cache = redis_client.redis.create_or_update(
 ```
 
 > [!div class="nextstepaction"]
-> [관리 API 탐색](/python/api/overview/azure/redis/managementlibrary)
+> [관리 API 탐색](/python/api/overview/azure/redis/management)
 

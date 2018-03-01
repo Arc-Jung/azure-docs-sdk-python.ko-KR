@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: active-directory
-ms.openlocfilehash: 41234fd44fa98c1ff57287193b0437b7caca46c8
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 78df70001dd0d55ac2c9c9da04fac6a51c5919e6
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
 # <a name="azure-active-directory-libraries-for-python"></a>Python용 Azure Active Directory 라이브러리
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 08/18/2017
 pip install azure-graphrbac
 ```
 
-### <a name="example"></a>예제
+### <a name="example"></a>예
 > [!NOTE]
 > 자격 증명 인스턴스를 만드는 동안 리소스 매개 변수를 https://graph.windows.net으로 변경해야 합니다.
 
@@ -81,6 +81,6 @@ graphrbac_client.users.delete(user.object_id)
 ```
 
 > [!div class="nextstepaction"]
-> [클라이언트 API 탐색](/python/api/overview/azure/activedirectory/clientlibrary?)
+> [클라이언트 API 탐색](/python/api/overview/azure/activedirectory/client)
 
 앱에서 사용할 수 있는 [Azure AD용 Python 샘플 코드](https://azure.microsoft.com/en-us/resources/samples/?term=active+directory&platform=python)를 추가로 탐색합니다.
