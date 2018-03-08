@@ -11,11 +11,11 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 59ae3628b4a810db8fee21aacf46c13054dc8cd3
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 294373469b1792821253ae46ab51fa0c06a74ffa
+ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/24/2018
 ---
 # <a name="azure-dns-libraries-for-python"></a>Python용 Azure DNS 라이브러리
 
@@ -25,31 +25,72 @@ ms.lasthandoff: 08/18/2017
 
 Azure DNS를 시작하려면 [Azure Portal을 사용하여 Azure DNS 시작](/azure/dns/dns-getstarted-portal)을 참조하세요.
 
-## <a name="management-apis"></a>관리 API
-
-관리 API를 사용하여 DNS 영역 및 레코드를 만들고 관리합니다.
-
-pip를 사용하여 관리 패키지를 설치합니다.
+## <a name="management-apipythonapioverviewazurednsmanagement"></a>[관리 API](/python/api/overview/azure/dns/management)
 
 ```bash
 pip install azure-mgmt-dns
 ```
 
-### <a name="example"></a>예제
+## <a name="create-the-management-client"></a>관리 클라이언트 만들기
 
-새 DNS 영역을 만듭니다.
+다음 코드는 관리 클라이언트의 인스턴스를 만듭니다.
 
-```python
+[구독 목록](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping)에서 검색할 수 있는 ``subscription_id``를 제공해야 합니다.
+
+Python SDK를 사용하여 Azure Active Directory 인증을 처리하고 ``Credentials`` 인스턴스를 만드는 방법에 대한 자세한 내용은 [리소스 관리 인증](/python/azure/python-sdk-azure-authenticate)을 참조하세요.
+
+```python 
 from azure.mgmt.dns import DnsManagementClient
+from azure.common.credentials import UserPassCredentials
 
-dns_client = DnsManagementClient(credentials, 'your-subscription-id')
-zone = dns_client.zones.create_or_update('resource-group',
-                                         'zone_name_no_dot',
-                                         {
-                                            "location": "global"
-                                         })
+# Replace this with your subscription id
+subscription_id = '33333333-3333-3333-3333-333333333333'
 
+# See above for details on creating different types of AAD credentials
+credentials = UserPassCredentials(
+    'user@domain.com',  # Your user
+    'my_password',      # Your password
+)
+
+dns_client = DnsManagementClient(
+    credentials,
+    subscription_id
+)
+```
+
+## <a name="create-dns-zone"></a>DNS 영역 만들기
+```python
+# The only valid value is 'global', otherwise you will get a:
+# The subscription is not registered for the resource type 'dnszones' in the location 'westus'.
+zone = dns_client.zones.create_or_update(
+    'MyResourceGroup',
+    'pydns.com',
+    {
+        'location': 'global'
+    }
+)
+```
+    
+## <a name="create-a-record-set"></a>레코드 집합 만들기
+```python
+record_set = dns_client.record_sets.create_or_update(
+    'MyResourceGroup',
+    'pydns.com',
+    'MyRecordSet',
+    'A',
+    {
+            "ttl": 300,
+            "arecords": [
+                {
+                "ipv4_address": "1.2.3.4"
+                },
+                {
+                "ipv4_address": "1.2.3.5"
+                }
+            ]
+    }
+)
 ```
 
 > [!div class="nextstepaction"]
-> [관리 API 탐색](/python/api/overview/azure/dns/managementlibrary)
+> [관리 API 탐색](/python/api/overview/azure/dns/management)
