@@ -2,30 +2,65 @@
 title: "Python용 Azure 서버 관리자 라이브러리"
 description: "Python용 Azure 서버 관리자 라이브러리에 대한 참조"
 keywords: "Azure, Python, SDK, API, 서버 관리자"
-author: sptramer
-ms.author: sttramer
-manager: douge
-ms.date: 07/10/2017
+author: lisawong19
+ms.author: liwong
+manager: routlaw
+ms.date: 02/22/2018
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: a50626a3adf4412cdf6e16cef346d8d37a4a14fb
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 480513a76683c97fdac8d2a65b38fde0fffb6dcd
+ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 02/23/2018
 ---
-# <a name="azure-server-manager-libraries-for-python"></a><span data-ttu-id="9e4a4-104">Python용 Azure 서버 관리자 라이브러리</span><span class="sxs-lookup"><span data-stu-id="9e4a4-104">Azure Server Manager libraries for python</span></span>
+# <a name="azure-server-manager-libraries-for-python"></a><span data-ttu-id="7ef8c-104">Python용 Azure 서버 관리자 라이브러리</span><span class="sxs-lookup"><span data-stu-id="7ef8c-104">Azure Server Manager libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="9e4a4-105">라이브러리 설치</span><span class="sxs-lookup"><span data-stu-id="9e4a4-105">Install the libraries</span></span>
-
-
-### <a name="management"></a><span data-ttu-id="9e4a4-106">관리</span><span class="sxs-lookup"><span data-stu-id="9e4a4-106">Management</span></span>
+## <a name="management-apipythonapioverviewazureservermanagermanagement"></a>[<span data-ttu-id="7ef8c-105">관리 API</span><span class="sxs-lookup"><span data-stu-id="7ef8c-105">Management API</span></span>](/python/api/overview/azure/servermanager/management)
 
 ```bash
 pip install azure-mgmt-servermanager
 ```
+
+## <a name="create-the-management-client"></a><span data-ttu-id="7ef8c-106">관리 클라이언트 만들기</span><span class="sxs-lookup"><span data-stu-id="7ef8c-106">Create the management client</span></span>
+
+<span data-ttu-id="7ef8c-107">다음 코드는 관리 클라이언트의 인스턴스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="7ef8c-107">The following code creates an instance of the management client.</span></span>
+
+<span data-ttu-id="7ef8c-108">[구독 목록](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping)에서 검색할 수 있는 ``subscription_id``을 제공해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="7ef8c-108">You will need to provide your ``subscription_id`` which can be retrieved from your [subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
+
+<span data-ttu-id="7ef8c-109">Python SDK를 사용하여 Azure Active Directory 인증을 처리하고 ``Credentials`` 인스턴스를 만드는 방법에 대한 자세한 내용은 [리소스 관리 인증](/python/azure/python-sdk-azure-authenticate)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="7ef8c-109">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
+
+```python
+from azure.mgmt.servermanager import ServerManagement
+from azure.common.credentials import UserPassCredentials
+
+# Replace this with your subscription id
+subscription_id = '33333333-3333-3333-3333-333333333333'
+
+# See above for details on creating different types of AAD credentials
+credentials = UserPassCredentials(
+    'user@domain.com',  # Your user
+    'my_password',      # Your password
+)
+
+servermanager_client = ServerManagement(
+    credentials,
+    subscription_id
+)
+``` 
+
+## <a name="create-gateway"></a><span data-ttu-id="7ef8c-110">게이트웨이 만들기</span><span class="sxs-lookup"><span data-stu-id="7ef8c-110">Create gateway</span></span>
+```python
+gateway_async = servermanager_client.gateway.create(
+    'MyResourceGroup',
+    'MyGateway',
+    'centralus'
+)
+gateway = gateway_async.result() # Blocking wait
+```
+
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="9e4a4-107">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="9e4a4-107">Explore the Management APIs</span></span>](/python/api/overview/azure/servermanager/managementlibrary)
+> [<span data-ttu-id="7ef8c-111">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="7ef8c-111">Explore the Management APIs</span></span>](/python/api/overview/azure/servermanager/management)
