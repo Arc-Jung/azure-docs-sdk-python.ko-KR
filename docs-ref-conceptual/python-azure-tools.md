@@ -1,6 +1,6 @@
 ---
-title: "Python 개발자용 Azure 도구 | Microsoft Docs"
-description: "Azure에서 작업하는 Python 개발자를 위한 IDE 통합 및 명령줄 인터페이스입니다."
+title: Python 개발자용 Azure 도구 | Microsoft Docs
+description: Azure에서 작업하는 Python 개발자를 위한 IDE 통합 및 명령줄 인터페이스입니다.
 author: lisawong19
 manager: douge
 ms.devlang: python
@@ -14,6 +14,7 @@ ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 12/05/2017
+ms.locfileid: "26184597"
 ---
 # <a name="azure-tools-for-python-developers"></a><span data-ttu-id="d2b6d-103">Python 개발자용 Azure 도구</span><span class="sxs-lookup"><span data-stu-id="d2b6d-103">Azure tools for Python developers</span></span>
 

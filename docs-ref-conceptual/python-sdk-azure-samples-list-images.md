@@ -1,9 +1,9 @@
 ---
-title: "이미지 나열"
-description: "가상 컴퓨터를 만드는 데 사용할 수 있는 모든 이미지를 인쇄합니다."
+title: 이미지 나열
+description: 가상 컴퓨터를 만드는 데 사용할 수 있는 모든 이미지를 인쇄합니다.
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909036"
 ---
 # <a name="list-images"></a><span data-ttu-id="afb2f-103">이미지 나열</span><span class="sxs-lookup"><span data-stu-id="afb2f-103">List images</span></span>
 

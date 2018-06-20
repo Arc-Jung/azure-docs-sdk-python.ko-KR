@@ -1,8 +1,8 @@
-# <a name="azure-monitor"></a>Azure Monitor
+# <a name="azure-monitor"></a><span data-ttu-id="c916b-101">Azure Monitor</span><span class="sxs-lookup"><span data-stu-id="c916b-101">Azure Monitor</span></span>
 
-이 샘플은 Azure(VM 등)에서 리소스의 메트릭을 가져옵니다.
+<span data-ttu-id="c916b-102">이 샘플은 Azure(VM 등)에서 리소스의 메트릭을 가져옵니다.</span><span class="sxs-lookup"><span data-stu-id="c916b-102">This sample get the metrics of a resource on Azure (VMs, etc.).</span></span>
 
-필터에 사용할 수 있는 키워드의 전체 목록은 [여기](https://msdn.microsoft.com/en-us/library/azure/mt743622.aspx)에 있습니다.
+<span data-ttu-id="c916b-103">필터에 사용할 수 있는 키워드의 전체 목록은 [여기](https://msdn.microsoft.com/en-us/library/azure/mt743622.aspx)에 있습니다.</span><span class="sxs-lookup"><span data-stu-id="c916b-103">A complete list of available keywords for filters is available [here](https://msdn.microsoft.com/en-us/library/azure/mt743622.aspx)</span></span>
 
 ```python
 import datetime

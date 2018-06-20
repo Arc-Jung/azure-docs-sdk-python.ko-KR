@@ -1,6 +1,6 @@
 ---
-title: "Python용 Azure 라이브러리"
-description: "Python용 Azure 관리 및 서비스 라이브러리에 대한 개요입니다."
+title: Python용 Azure 라이브러리
+description: Python용 Azure 관리 및 서비스 라이브러리에 대한 개요입니다.
 keywords: Azure, Python, SDK, API
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 2b3e6d31edd7b946664853b3478e22205ab8c92e
 ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478806"
 ---
 # <a name="azure-libraries-for-python"></a><span data-ttu-id="9a9d9-104">Python용 Azure 라이브러리</span><span class="sxs-lookup"><span data-stu-id="9a9d9-104">Azure libraries for Python</span></span>
 

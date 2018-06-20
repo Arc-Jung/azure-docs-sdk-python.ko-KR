@@ -1,6 +1,6 @@
 ---
-title: "설치"
-description: "Azure Python SDK를 설치하는 방법을 설명합니다."
+title: 설치
+description: Azure Python SDK를 설치하는 방법을 설명합니다.
 keywords: Azure, Python, SDK, API
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 757bf84535fd9d8299c4b51ec92a5ab1926cb671
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/27/2018
+ms.locfileid: "29565822"
 ---
 # <a name="installation"></a><span data-ttu-id="7e669-104">설치</span><span class="sxs-lookup"><span data-stu-id="7e669-104">Installation</span></span>
 

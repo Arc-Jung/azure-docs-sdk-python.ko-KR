@@ -1,7 +1,7 @@
 ---
-title: "Python용 Azure 청구 라이브러리"
-description: "Python용 Azure 청구 라이브러리에 대한 참조"
-keywords: "Azure, Python, SDK, API, 청구"
+title: Python용 Azure 청구 라이브러리
+description: Python용 Azure 청구 라이브러리에 대한 참조
+keywords: Azure, Python, SDK, API, 청구
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478876"
 ---
 # <a name="azure-billing-libraries-for-python"></a><span data-ttu-id="9114d-104">Python용 Azure 청구 라이브러리</span><span class="sxs-lookup"><span data-stu-id="9114d-104">Azure Billing libraries for python</span></span>
 

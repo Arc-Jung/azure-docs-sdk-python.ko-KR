@@ -16,6 +16,7 @@ ms.sourcegitcommit: 61cc12fd4bb1a3ad5f9b79d1c616f005bc21c5d9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/06/2018
+ms.locfileid: "30849774"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a><span data-ttu-id="b1f87-104">Python용 Azure Cognitive Services 모듈</span><span class="sxs-lookup"><span data-stu-id="b1f87-104">Azure Cognitive Services modules for Python</span></span>
 

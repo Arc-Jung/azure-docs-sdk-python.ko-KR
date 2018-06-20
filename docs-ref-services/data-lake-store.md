@@ -1,6 +1,6 @@
 ---
-title: "Python용 Azure Data Lake Store 라이브러리"
-description: "Python용 Azure Data Lake Store 라이브러리에 대한 참조"
+title: Python용 Azure Data Lake Store 라이브러리
+description: Python용 Azure Data Lake Store 라이브러리에 대한 참조
 keywords: Azure, Python, SDK, API, Data Lake Store
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479036"
 ---
 # <a name="azure-data-lake-store-libraries-for-python"></a><span data-ttu-id="20249-104">Python용 Azure Data Lake Store 라이브러리</span><span class="sxs-lookup"><span data-stu-id="20249-104">Azure Data Lake Store libraries for python</span></span>
 

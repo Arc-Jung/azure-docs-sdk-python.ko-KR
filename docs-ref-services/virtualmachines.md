@@ -1,6 +1,6 @@
 ---
-title: "Python용 Azure Virtual Machine 라이브러리"
-description: 
+title: Python용 Azure Virtual Machine 라이브러리
+description: ''
 keywords: Azure, Python, SDK, API, Compute, Virtual Machines
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29478826"
 ---
 # <a name="azure-virtual-machine-libraries"></a><span data-ttu-id="ae8f1-103">Azure 가상 머신 라이브러리</span><span class="sxs-lookup"><span data-stu-id="ae8f1-103">Azure virtual machine libraries</span></span>
 

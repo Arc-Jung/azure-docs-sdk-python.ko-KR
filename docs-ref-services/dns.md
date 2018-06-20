@@ -1,6 +1,6 @@
 ---
-title: "Python용 Azure DNS 라이브러리"
-description: "Python용 Azure DNS 라이브러리에 대한 참조"
+title: Python용 Azure DNS 라이브러리
+description: Python용 Azure DNS 라이브러리에 대한 참조
 keywords: Azure, Python, SDK, API, DNS
 author: sptramer
 ms.author: sttramer
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551566"
 ---
 # <a name="azure-dns-libraries-for-python"></a><span data-ttu-id="fef17-104">Python용 Azure DNS 라이브러리</span><span class="sxs-lookup"><span data-stu-id="fef17-104">Azure DNS libraries for python</span></span>
 
