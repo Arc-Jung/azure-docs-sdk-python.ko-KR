@@ -1,7 +1,7 @@
 ---
-title: "Python용 Azure Redis 라이브러리"
-description: "Python용 Redis 라이브러리에 대한 참조 설명서"
-keywords: "Azure, Python, Redis, API, SDK, 데이터베이스, NoSQL"
+title: Python용 Azure Redis 라이브러리
+description: Python용 Redis 라이브러리에 대한 참조 설명서
+keywords: Azure, Python, Redis, API, SDK, 데이터베이스, NoSQL
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -14,6 +14,7 @@ ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/23/2018
+ms.locfileid: "29479246"
 ---
 # <a name="azure-redis-cache-libraries-for-python"></a>Python용 Azure Redis Cache 라이브러리
 

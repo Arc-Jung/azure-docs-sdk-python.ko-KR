@@ -1,6 +1,6 @@
 ---
-title: "Python 웹앱 샘플용 Azure 관리 라이브러리"
-description: "Python용 Azure 관리 라이브러리를 사용하여 App Service에서 호스팅되는 Azure 웹앱을 만들고 업데이트하기 위한 샘플 코드를 얻습니다."
+title: Python 웹앱 샘플용 Azure 관리 라이브러리
+description: Python용 Azure 관리 라이브러리를 사용하여 App Service에서 호스팅되는 Azure 웹앱을 만들고 업데이트하기 위한 샘플 코드를 얻습니다.
 keywords: Azure, Python, SDK, API, Web Apps, App Service
 author: lisawong19
 ms.author: liwong
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 64ca5c673366f641ffd66fccb88750c32a4fad38
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909026"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-web-apps"></a>Python 웹앱 샘플용 Azure 관리 라이브러리
 

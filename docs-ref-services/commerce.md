@@ -1,7 +1,7 @@
 ---
-title: "Python용 Azure 상거래 라이브러리"
-description: "Python용 Azure 상거래 라이브러리에 대한 참조"
-keywords: "Azure, Python, SDK, API, 상거래"
+title: Python용 Azure 상거래 라이브러리
+description: Python용 Azure 상거래 라이브러리에 대한 참조
+keywords: Azure, Python, SDK, API, 상거래
 author: lisawong19
 ms.author: liwong
 manager: routlaw
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551606"
 ---
 # <a name="azure-commerce-libraries-for-python"></a>Python용 Azure 상거래 라이브러리
 

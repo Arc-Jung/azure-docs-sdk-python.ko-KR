@@ -1,7 +1,7 @@
 ---
-title: "Python 가상 컴퓨터 샘플용 Azure 관리 라이브러리"
-description: "Python용 Azure 관리 라이브러리를 사용하여 Azure 가상 컴퓨터를 만들고 업데이트하기 위한 샘플 코드를 얻습니다."
-keywords: "Azure, Python, SDK, API, 가상 컴퓨터"
+title: Python 가상 컴퓨터 샘플용 Azure 관리 라이브러리
+description: Python용 Azure 관리 라이브러리를 사용하여 Azure 가상 컴퓨터를 만들고 업데이트하기 위한 샘플 코드를 얻습니다.
+keywords: Azure, Python, SDK, API, 가상 컴퓨터
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -10,12 +10,13 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.assetid: 
+ms.assetid: ''
 ms.openlocfilehash: 0222632b0d65395e00f64f07806b03ddab4f8222
 ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909266"
 ---
 # <a name="azure-management-libraries-for-python-samples-for-virtual-machines"></a>Python 가상 컴퓨터 샘플용 Azure 관리 라이브러리
 

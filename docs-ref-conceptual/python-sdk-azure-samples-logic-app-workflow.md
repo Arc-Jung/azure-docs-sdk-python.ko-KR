@@ -1,9 +1,9 @@
 ---
-title: "논리 앱 워크플로 만들기"
-description: "논리 앱 워크플로 만들기"
+title: 논리 앱 워크플로 만들기
+description: 논리 앱 워크플로 만들기
 author: lisawong19
 manager: douge
-ms.assetid: 
+ms.assetid: ''
 ms.devlang: python
 ms.topic: article
 ms.service: Azure
@@ -15,6 +15,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909066"
 ---
 # <a name="create-a-logic-app-workflow"></a>논리 앱 워크플로 만들기
 

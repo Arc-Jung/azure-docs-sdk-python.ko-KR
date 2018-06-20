@@ -1,7 +1,7 @@
 ---
-title: "Python용 Azure 리소스 라이브러리"
-description: 
-keywords: "Azure, Python, SDK, API, 리소스"
+title: Python용 Azure 리소스 라이브러리
+description: ''
+keywords: Azure, Python, SDK, API, 리소스
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909396"
 ---
 # <a name="azure-resources-libraries-for-python"></a>Python용 Azure 리소스 라이브러리 
 

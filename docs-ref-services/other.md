@@ -1,7 +1,7 @@
 ---
-title: "Python용 다른 Azure 라이브러리"
-description: "Python용 다른 Azure 라이브러리에 대한 참조"
-keywords: "Azure, Python, SDK, API, 기타"
+title: Python용 다른 Azure 라이브러리
+description: Python용 다른 Azure 라이브러리에 대한 참조
+keywords: Azure, Python, SDK, API, 기타
 author: sptramer
 ms.author: sttramer
 manager: douge
@@ -16,6 +16,7 @@ ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 08/18/2017
+ms.locfileid: "20909366"
 ---
 # <a name="azure-other-libraries-for-python"></a>Python용 다른 Azure 라이브러리
 

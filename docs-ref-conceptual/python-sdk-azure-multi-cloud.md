@@ -13,6 +13,7 @@ ms.sourcegitcommit: 7066ace94076483bae7d54172605f431e47bd5ee
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 04/05/2018
+ms.locfileid: "30820127"
 ---
 # <a name="multi-cloud---use-azure-on-all-regions"></a>다중 클라우드 - 모든 지역에서 Azure 사용
 

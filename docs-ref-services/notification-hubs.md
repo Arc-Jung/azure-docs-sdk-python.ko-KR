@@ -1,6 +1,6 @@
 ---
-title: "Python용 Azure Notification Hubs 라이브러리"
-description: "Python용 Azure Notification Hubs 라이브러리에 대한 참조"
+title: Python용 Azure Notification Hubs 라이브러리
+description: Python용 Azure Notification Hubs 라이브러리에 대한 참조
 keywords: Azure, Python, SDK, API, Notification Hubs
 author: lisawong19
 ms.author: liwong
@@ -16,6 +16,7 @@ ms.sourcegitcommit: d7c26ac167cf6a6491358ac3153f268bc90e55e9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
 ms.lasthandoff: 02/24/2018
+ms.locfileid: "29551586"
 ---
 # <a name="azure-notification-hubs-libraries-for-python"></a>Python용 Azure Notification Hubs 라이브러리
 
