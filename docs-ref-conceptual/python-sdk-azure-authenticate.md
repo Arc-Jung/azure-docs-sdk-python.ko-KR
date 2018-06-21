@@ -1,7 +1,7 @@
 ---
-title: "Python용 Azure 관리 라이브러리를 사용하여 인증"
-description: "Python용 Azure 관리 라이브러리에 서비스 사용자를 인증합니다."
-keywords: "Azure, Python, SDK, API, 인증, Active Directory, 서비스 사용자"
+title: Python용 Azure 관리 라이브러리를 사용하여 인증
+description: Python용 Azure 관리 라이브러리에 서비스 사용자를 인증합니다.
+keywords: Azure, Python, SDK, API, 인증, Active Directory, 서비스 사용자
 author: lisawong19
 ms.author: liwong
 manager: douge
@@ -10,15 +10,16 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 271722eee1ef982d1f091b3d3af29069917f3e17
-ms.sourcegitcommit: 97e5d660eb4a006f969c3010087e1386cc6eb482
+ms.openlocfilehash: 78b248071e4718c1ab5ad743e697eafcfb510ec5
+ms.sourcegitcommit: 86f7f40295271ef94272642efb89b471aae99a2c
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 06/18/2018
+ms.locfileid: "35720054"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Python용 Azure 관리 라이브러리를 사용하여 인증
 
-Python 관리 라이브러리를 사용하여 리소스를 만들고 관리할 때 Azure를 통해 응용 프로그램을 인증하는 몇 가지 방법이 있습니다.
+Python 관리 라이브러리를 사용하여 리소스를 만들고 관리할 때 Azure를 통해 응용 프로그램을 인증하는 데 사용할 수 있는 몇 가지 옵션이 있습니다.
 
 ## <a name="mgmt-auth-token"></a>토큰 자격 증명을 사용하여 인증
 
@@ -216,6 +217,6 @@ client = get_client_from_cli_profile(ComputeManagementClient)
 
     credentials = UserPassCredentials(
         'user@domain.com',
-        'my_smart_password',
+        'my_smart_password'
     )
 ```
