@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d924a8aea18d9b59ec8c78d85dce8fe0ce7c8d6c
-ms.sourcegitcommit: d521a7350216461eb2fa68152c4975f55152f831
+ms.openlocfilehash: f331a88ceac73449c9c1aff7bccbbaff4c4ba7be
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/06/2017
-ms.locfileid: "26327991"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52277380"
 ---
 # <a name="azure-resources-libraries-for-python"></a>Python용 Azure 리소스 라이브러리
 
@@ -29,7 +29,7 @@ ms.locfileid: "26327991"
 ```bash
 pip install azure-mgmt-resource
 ```
-### <a name="example"></a>예제 
+### <a name="example"></a>예 
 Azure Eastern US 지역에 새 리소스 그룹을 만듭니다.
 
 ```python

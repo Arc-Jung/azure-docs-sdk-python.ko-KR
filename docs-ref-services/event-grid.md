@@ -7,16 +7,14 @@ ms.author: liwong
 manager: routlaw
 ms.date: 08/21/2017
 ms.topic: article
-ms.prod: azure
-ms.technology: azure
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: e68504b3ba5834a145af1231eacc076e424a2256
-ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
+ms.openlocfilehash: bfaa1908295eb77531e399f1337acdeee512005f
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33901428"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276837"
 ---
 # <a name="event-grid-libraries-for-python"></a>Python용 Event Grid 라이브러리
 
@@ -77,7 +75,7 @@ def publish_event(self):
 
 ## <a name="management-sdk"></a>관리 SDK
 
-관리 SDK를 사용하여 Event Grid 인스턴스, 토픽 및 구독을 만들고 업데이트하거나 삭제합니다.
+관리 SDK를 사용하여 Event Grid 인스턴스, 토픽 및 구독을 만들거나 업데이트하거나 삭제합니다.
 
 ### <a name="installation"></a>설치 
 
@@ -90,7 +88,7 @@ pip install azure-mgmt-eventgrid
 ### <a name="example"></a>예
 
 다음에서는 사용자 지정 토픽을 만들고 해당 토픽에 엔트포인트를 등록합니다. 그런 다음, 코드는 HTTPS를 통해 토픽에 이벤트를 보냅니다.
-RequestBin은 오픈 소스이면서 타사 도구로, 이 도구를 통해 끝점을 만들고 끝점에 전송된 요청을 볼 수 있습니다. [RequestBin](https://requestb.in/)으로 이동하고 **RequestBin 만들기**를 클릭합니다. 토픽을 구독할 때 필요하기 때문에 bin URL을 복사합니다.
+RequestBin은 오픈 소스이면서 타사 도구로, 이 도구를 통해 엔드포인트를 만들고 엔드포인트에 전송된 요청을 볼 수 있습니다. [RequestBin](https://requestb.in/)으로 이동하고 **RequestBin 만들기**를 클릭합니다. 토픽을 구독할 때 필요하기 때문에 bin URL을 복사합니다.
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient
