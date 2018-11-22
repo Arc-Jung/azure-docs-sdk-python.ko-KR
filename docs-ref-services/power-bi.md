@@ -11,22 +11,22 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d58752f58a39fad9910cc7bd1f8170516c39d863
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: fc37bdf184ea5204a291d6f23fe699c70bf87b71
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29479026"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52273009"
 ---
-# <a name="azure-powerbi-libraries-for-python"></a><span data-ttu-id="dd98e-104">Python용 Azure PowerBI 라이브러리</span><span class="sxs-lookup"><span data-stu-id="dd98e-104">Azure PowerBI libraries for python</span></span>
+# <a name="azure-powerbi-libraries-for-python"></a><span data-ttu-id="870b3-104">Python용 Azure PowerBI 라이브러리</span><span class="sxs-lookup"><span data-stu-id="870b3-104">Azure PowerBI libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="dd98e-105">라이브러리 설치</span><span class="sxs-lookup"><span data-stu-id="dd98e-105">Install the libraries</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="870b3-105">라이브러리 설치</span><span class="sxs-lookup"><span data-stu-id="870b3-105">Install the libraries</span></span>
 
 
-### <a name="management"></a><span data-ttu-id="dd98e-106">관리</span><span class="sxs-lookup"><span data-stu-id="dd98e-106">Management</span></span>
+### <a name="management"></a><span data-ttu-id="870b3-106">관리</span><span class="sxs-lookup"><span data-stu-id="870b3-106">Management</span></span>
 
 ```bash
 pip install azure-mgmt-powerblembedded
 ```
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="dd98e-107">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="dd98e-107">Explore the Management APIs</span></span>](/python/api/overview/azure/powerbi/management)
+> [<span data-ttu-id="870b3-107">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="870b3-107">Explore the Management APIs</span></span>](/python/api/overview/azure/powerbi/management)

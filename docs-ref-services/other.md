@@ -11,24 +11,24 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: de0f1f60ab39cd0c17bfe7d292a901e4608d9a11
-ms.sourcegitcommit: 3617d0db0111bbc00072ff8161de2d76606ce0ea
+ms.openlocfilehash: 53640c7bbad3a15a8e5bfe0d535209ca232d42f9
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 08/18/2017
-ms.locfileid: "20909366"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52272969"
 ---
-# <a name="azure-other-libraries-for-python"></a><span data-ttu-id="8eefe-104">Python용 다른 Azure 라이브러리</span><span class="sxs-lookup"><span data-stu-id="8eefe-104">Azure Other libraries for python</span></span>
+# <a name="azure-other-libraries-for-python"></a><span data-ttu-id="4b260-104">Python용 다른 Azure 라이브러리</span><span class="sxs-lookup"><span data-stu-id="4b260-104">Azure Other libraries for python</span></span>
 
-## <a name="install-the-libraries"></a><span data-ttu-id="8eefe-105">라이브러리 설치</span><span class="sxs-lookup"><span data-stu-id="8eefe-105">Install the libraries</span></span>
-### <a name="client"></a><span data-ttu-id="8eefe-106">클라이언트</span><span class="sxs-lookup"><span data-stu-id="8eefe-106">Client</span></span>
+## <a name="install-the-libraries"></a><span data-ttu-id="4b260-105">라이브러리 설치</span><span class="sxs-lookup"><span data-stu-id="4b260-105">Install the libraries</span></span>
+### <a name="client"></a><span data-ttu-id="4b260-106">클라이언트</span><span class="sxs-lookup"><span data-stu-id="4b260-106">Client</span></span>
 
 ```bash
 pip install azure-common
 pip install azure
 ```
 
-### <a name="management"></a><span data-ttu-id="8eefe-107">관리</span><span class="sxs-lookup"><span data-stu-id="8eefe-107">Management</span></span>
+### <a name="management"></a><span data-ttu-id="4b260-107">관리</span><span class="sxs-lookup"><span data-stu-id="4b260-107">Management</span></span>
 
 ```bash
 pip install azure-mgmt
