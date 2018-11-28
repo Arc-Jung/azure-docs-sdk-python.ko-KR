@@ -9,12 +9,12 @@ ms.date: 03/20/2018
 ms.topic: article
 ms.devlang: python
 ms.service: cosmosdb
-ms.openlocfilehash: 391b556ece7d818406fa501763814eb7f0d50d22
-ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
+ms.openlocfilehash: c2f3ea017a8864d4d2fb74a439c420f1f0313082
+ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204140"
+ms.lasthandoff: 11/21/2018
+ms.locfileid: "52276797"
 ---
 # <a name="azure-cosmos-db-libraries-for-python"></a>Python용 Azure Cosmos DB 라이브러리
 
@@ -84,6 +84,14 @@ print(results)
 
 ## <a name="samples"></a>샘플
 
-[Azure Cosmos DB를 사용하여 Python 앱 개발](https://azure.microsoft.com/resources/samples/azure-cosmos-db-documentdb-python-getting-started/)
+* [Azure Cosmos DB SQL API 계정에 저장된 데이터를 액세스하고 관리하기 위한 Python 앱 개발](https://github.com/Azure-Samples/azure-cosmos-db-python-getting-started.git)
+
+* [Azure Cosmos DB MongoDB API 계정에 저장된 데이터를 액세스하고 관리하기 위한 Python 앱 개발](https://github.com/Azure-Samples/CosmosDB-Flask-Mongo-Sample.git)
+
+* [Azure Cosmos DB Gremlin API 계정에 저장된 데이터를 액세스하고 관리하기 위한 Python 앱 개발](https://github.com/Azure-Samples/azure-cosmos-db-graph-python-getting-started.git)
+
+* [Azure Cosmos DB Cassandra API 계정에 저장된 데이터를 액세스하고 관리하기 위한 Python 앱 개발](https://github.com/Azure-Samples/azure-cosmos-db-cassandra-python-getting-started.git)
+
+* [Azure Cosmos DB Table API 계정에 저장된 데이터를 액세스하고 관리하기 위한 Python 앱 개발](https://github.com/Azure-Samples/storage-python-getting-started.git)
 
 
