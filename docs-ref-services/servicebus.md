@@ -134,7 +134,7 @@ msg = sbs.receive_subscription_message('taskdiscussion', 'client1')
 
 ## <a name="event-hub"></a>이벤트 허브
 
-Event Hubs를 통해 다양한 장치 및 서비스 집합에서 높은 처리량으로 이벤트 스트림을 수집할 수 있습니다.
+Event Hubs를 통해 다양한 디바이스 및 서비스 집합에서 높은 처리량으로 이벤트 스트림을 수집할 수 있습니다.
 
 **create\_event\_hub** 메서드를 사용하여 Event Hub를 만들 수 있습니다.
 
