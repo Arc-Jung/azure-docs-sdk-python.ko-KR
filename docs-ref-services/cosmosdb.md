@@ -20,7 +20,7 @@ ms.locfileid: "52276797"
 
 ## <a name="overview"></a>개요
 
-Python 응용 프로그램에서 Azure Cosmos DB를 사용하여 JSON 문서를 NoSQL 데이터 저장소에 저장하고 쿼리할 수 있습니다.
+Python 애플리케이션에서 Azure Cosmos DB를 사용하여 JSON 문서를 NoSQL 데이터 저장소에 저장하고 쿼리할 수 있습니다.
 
 [Azure Cosmos DB](https://docs.microsoft.com/azure/cosmos-db/introduction)에 대해 자세히 알아보세요.
 
