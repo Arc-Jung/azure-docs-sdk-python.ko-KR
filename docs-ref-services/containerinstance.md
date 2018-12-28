@@ -68,7 +68,7 @@ Python용 Azure 관리 라이브러리에 사용가능한 인증 방법에 대�
 
 ## <a name="create-container-group---multiple-containers"></a>컨테이너 그룹 만들기 - 여러 컨테이너
 
-이 예에서는 응용 프로그램 컨테이너와 사이드카 컨테이너라는 두 개의 컨테이너로 컨테이너 그룹을 만듭니다.
+이 예에서는 애플리케이션 컨테이너와 사이드카 컨테이너라는 두 개의 컨테이너로 컨테이너 그룹을 만듭니다.
 
 <!-- SOURCE REPO: https://github.com/Azure-Samples/aci-docs-sample-python --> [!code-python[create_container_group_multi](~/aci-docs-sample-python/src/aci_docs_sample.py#L143-L196 "Create multi-container group")]
 
@@ -85,7 +85,7 @@ Python용 Azure 관리 라이브러리에 사용가능한 인증 방법에 대�
    그러나 (잠재적으로) 여러 인수를 사용하여 **여러 명령**을 실행하려는 경우, 셸을 실행하고 연결된 명령을 인수로서 전달해야 합니다. 예를 들어,이는 `echo` 및 `tail` 명령을 모두 실행합니다.
 
    `command = ['/bin/sh', '-c', 'echo FOO BAR && tail -f /dev/null']`
-* [환경 변수](/azure/container-instances/container-instances-environment-variables) - 두 환경 변수가 컨테이너 그룹의 컨테이너에 대해 지정됩니다. 환경 변수를 사용 하여 런타임 시 스크립트 또는 응용프로그램 동작을 수정하거나, 컨테이너에서 실행 중인 응용프로그램에 동적 정보를 전달 합니다.
+* [환경 변수](/azure/container-instances/container-instances-environment-variables) - 두 환경 변수가 컨테이너 그룹의 컨테이너에 대해 지정됩니다. 환경 변수를 사용 하여 런타임 시 스크립트 또는 애플리케이션 동작을 수정하거나, 컨테이너에서 실행 중인 애플리케이션에 동적 정보를 전달 합니다.
 * [정책 다시 시작](/azure/container-instances/container-instances-restart-policy) - 해당 컨테이너는 "Never" 재시작 정책을 사용하여 구성되었으며, 이는 일괄 처리 작업의 일부로 실행되는 작업 기반 컨테이너에 유용합니다.
 * [AzureOperationPoller] [ AzureOperationPoller]로 폴링하여 작업 - create 메서드가 호출된 후, 작업이 완료되고 컨테이너 그룹 로그를 얻을 수 있는 시기를 결정하기 위해 작업이 폴링됩니다.
 

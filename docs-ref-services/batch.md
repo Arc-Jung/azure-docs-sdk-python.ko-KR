@@ -68,7 +68,7 @@ pip install azure-mgmt-batch
 > [클라이언트 API 탐색](/python/api/overview/azure/batch/client)
 
 ### <a name="example"></a>예
-Azure Batch 계정을 만들고, 새 응용 프로그램 및 Azure 저장소 계정을 구성합니다.
+Azure Batch 계정을 만들고, 새 애플리케이션 및 Azure Storage 계정을 구성합니다.
 
 ```python
 from azure.mgmt.batch import BatchManagementClient
