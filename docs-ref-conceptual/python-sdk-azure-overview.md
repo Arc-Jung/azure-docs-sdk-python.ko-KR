@@ -20,11 +20,11 @@ ms.locfileid: "29478806"
 ---
 # <a name="azure-libraries-for-python"></a>Python용 Azure 라이브러리
 
-Python용 Azure 라이브러리를 사용하면 Azure 서비스를 사용하고 응용 프로그램 코드에서 Azure 리소스를 관리할 수 있습니다. 
+Python용 Azure 라이브러리를 사용하면 Azure 서비스를 사용하고 애플리케이션 코드에서 Azure 리소스를 관리할 수 있습니다. 
 
 ## <a name="manage-azure-resources"></a>Azure 리소스 관리
 
-Python용 Azure 라이브러리를 사용하여 Python 응용 프로그램에서 Azure 리소스를 만들고 관리합니다.
+Python용 Azure 라이브러리를 사용하여 Python 애플리케이션에서 Azure 리소스를 만들고 관리합니다.
 
 예를 들어 SQL Server 인스턴스를 만들려면 다음 코드를 사용할 수 있습니다.
 

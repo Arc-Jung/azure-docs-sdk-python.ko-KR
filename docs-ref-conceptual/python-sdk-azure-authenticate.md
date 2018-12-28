@@ -19,7 +19,7 @@ ms.locfileid: "52273049"
 ---
 # <a name="authenticate-with-the-azure-management-libraries-for-python"></a>Python용 Azure 관리 라이브러리를 사용하여 인증
 
-Python 관리 라이브러리를 사용하여 리소스를 만들고 관리할 때 Azure를 통해 응용 프로그램을 인증하는 데 사용할 수 있는 몇 가지 옵션이 있습니다.
+Python 관리 라이브러리를 사용하여 리소스를 만들고 관리할 때 Azure를 통해 애플리케이션을 인증하는 데 사용할 수 있는 몇 가지 옵션이 있습니다.
 
 ## <a name="mgmt-auth-token"></a>토큰 자격 증명을 사용하여 인증
 

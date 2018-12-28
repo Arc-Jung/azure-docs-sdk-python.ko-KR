@@ -75,7 +75,7 @@ source_control_async_operation = web_client.web_apps.create_or_update_source_con
 * [Python을 사용하여 Azure 웹 사이트 관리(영문)][1]
 * [논리 앱 워크플로 만들기][2]
  
-웹 응용 프로그램 샘플의 [전체 목록](https://azure.microsoft.com/en-us/resources/samples/?platform=python&term=web-app)을 봅니다.
+웹 애플리케이션 샘플의 [전체 목록](https://azure.microsoft.com/en-us/resources/samples/?platform=python&term=web-app)을 봅니다.
 
 [1]: https://azure.microsoft.com/resources/samples/app-service-web-python-manage
 [2]: ../docs-ref-conceptual/python-sdk-azure-samples-logic-app-workflow.md
