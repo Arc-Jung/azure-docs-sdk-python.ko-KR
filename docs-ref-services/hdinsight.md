@@ -7,18 +7,18 @@ ms.author: tyfox
 ms.date: 09/18/2018
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: 42e1e36b5854fda93188564be3ed3064b9ba4435
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 9447d50fd734bd9221accbf470a456210bb57a7f
+ms.sourcegitcommit: e2e4b1ecfac9804a72973477634128061c1ec990
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277477"
+ms.lasthandoff: 12/17/2018
+ms.locfileid: "53455110"
 ---
 # <a name="hdinsight-python-management-sdk-preview"></a>HDInsight Python 관리 SDK 미리 보기
 
 ## <a name="overview"></a>개요
 
-HDInsight Python SDK는 HDInsight 클러스터 관리를 위한 클래스 및 메서드를 제공합니다. 여기에는 HDInsight 클러스터의 속성 만들기, 삭제, 업데이트, 나열, 크기 조정, 스크립트 작업 실행, 모니터링, 가져오기 작업이 포함됩니다.
+HDInsight Python SDK는 HDInsight 클러스터 관리를 위한 클래스 및 메서드를 제공합니다. 여기에는 HDInsight 클러스터의 속성 만들기, 삭제, 업데이트, 나열, 크기 조정, 스크립트 작업 실행, 모니터링, 가져오기 작업을 포함합니다.
 
 ## <a name="prerequisites"></a>필수 조건
 
@@ -37,7 +37,7 @@ HDInsight Python SDK는 [Python 패키지 인덱스](https://pypi.org/project/az
 Azure 구독을 사용해서 SDK를 먼저 인증해야 합니다.  아래 예제에 따라 서비스 주체를 만들고 이를 인증에 사용합니다. 완료되었으면 관리 작업 수행을 위해 사용할 수 있는 여러 메서드(아래 섹션 참조)가 포함된 `HDInsightManagementClient` 인스턴스가 준비됩니다.
 
 > [!NOTE]
-> 아래 설명된 예제 외에도 사용자 요구에 더 적합할 수 있는 다른 인증 방법이 있습니다. 모든 메서드는 여기에 설명되어 있습니다: [Python용 Azure 관리 라이브러리로 인증](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)
+> 아래 설명된 예제 외에도 사용자 요구에 더 적합할 수 있는 다른 인증 방법이 있습니다. 모든 메서드는 여기에 설명되어 있습니다. [Python용 Azure 관리 라이브러리를 사용하여 인증](https://docs.microsoft.com/en-us/python/azure/python-sdk-azure-authenticate?view=azure-python)
 
 ### <a name="authentication-example-using-a-service-principal"></a>서비스 주체를 사용한 인증 예제
 
@@ -310,7 +310,7 @@ client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={<Diction
 client.clusters.update("<Resource Group Name>", "<Cluster Name>", tags={"tag1Name" : "tag1Value", "tag2Name" : "tag2Value"})
 ```
 
-### <a name="scale-cluster"></a>클러스터 크기 조정
+### <a name="resize-cluster"></a>클러스터 크기 조정
 
 새 크기를 지정하여 작업자 노드의 지정된 클러스터 번호를 크기 조정할 수 있습니다.
 
@@ -325,7 +325,7 @@ client.clusters.resize("<Resource Group Name>", "<Cluster Name>", target_instanc
 ### <a name="enable-oms-monitoring"></a>OMS 모니터링 사용
 
 > [!NOTE]
-> OMS 모니터링을 사용하려면 기존 Log Analytics 작업 영역이 있어야 합니다. 아직 만들지 않았으면 [Azure Portal에서 Log Analytics 작업 영역 만들기](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace)에서 이를 수행하는 방법을 확인할 수 있습니다.
+> OMS 모니터링을 사용하려면 기존 Log Analytics 작업 영역이 있어야 합니다. 아직 작업 영역을 만들지 않은 경우 다음에서 작업 영역을 만드는 방법을 알아볼 수 있습니다. [Azure Portal에서 Log Analytics 작업 영역 만들기](https://docs.microsoft.com/en-us/azure/log-analytics/log-analytics-quick-create-workspace).
 
 클러스터에서 OMS 모니터링을 사용하려면:
 
@@ -353,7 +353,7 @@ client.extension.disable_monitoring("<Resource Group Name>", "<Cluster Name>")
 
 HDInsight는 클러스터 사용자 지정을 위해 사용자 지정 스크립트를 호출하는 스크립트 작업이라고 부르는 구성 메서드를 제공합니다.
 > [!NOTE]
-> 스크립트 작업 사용 방법에 대한 자세한 내용은 [스크립트 작업을 사용하여 Linux 기반 HDInsight 클러스터 사용자 지정](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux)에서 확인할 수 있습니다.
+> 스크립트 작업을 사용하는 방법에 대한 자세한 내용은 다음에서 찾을 수 있습니다. [스크립트 작업을 사용하여 Linux 기반 HDInsight 클러스터 사용자 지정](https://docs.microsoft.com/en-us/azure/hdinsight/hdinsight-hadoop-customize-cluster-linux).
 
 ### <a name="execute-script-actions"></a>스크립트 작업 실행
 지정된 클러스터에서 스크립트 작업을 실행하려면 다음을 수행합니다.
