@@ -78,7 +78,7 @@ Python용 Azure 관리 라이브러리에 사용가능한 인증 방법에 대�
 
 * [명령줄 재정의](/azure/container-instances/container-instances-restart-policy#command-line-override) - 컨테이너의 Dockerfile `CMD` 줄에 지정된 것과 다른 사용자 지정 명령줄이 지정됩니다. 명령줄 재정의를 사용하면 컨테이너 시작 시 실행 하는 사용자 지정 명령줄을 지정할 수 있으며, 이는 컨테이너에 내장된 기본 명령줄을 재정의합니다. 컨테이너 시작 시 여러 명령을 실행하는 것과 관련하여 다음이 적용됩니다.
 
-   `echo FOO BAR`에서와 같이 여러 명령줄 인수를 사용하여 **단일 명령**을 실행하려면 이들 인수를 문자열 배열로서 [ 컨테이너][Container]의 `command`속성에 제공해야 합니다. 예: 
+   `echo FOO BAR`에서와 같이 여러 명령줄 인수를 사용하여 **단일 명령**을 실행하려면 이들 인수를 문자열 배열로서 [ 컨테이너][Container]의 `command`속성에 제공해야 합니다. 예를 들면 다음과 같습니다.
 
    `command = ['echo', 'FOO', 'BAR']`
 
