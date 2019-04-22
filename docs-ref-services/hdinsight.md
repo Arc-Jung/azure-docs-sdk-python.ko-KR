@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: f16e5da474e1c506c800b860b451754a6bdc75bc
-ms.sourcegitcommit: 3c6087cbc1fee5a2c88c40fe96d351375c6c6377
+ms.openlocfilehash: ea9599be9fead5f964fbd4ce4e4bdc78a445918c
+ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/11/2019
-ms.locfileid: "59504550"
+ms.lasthandoff: 04/16/2019
+ms.locfileid: "59586821"
 ---
 # <a name="hdinsight-sdk-for-python"></a>Python용 HDInsight SDK
 
@@ -131,7 +131,11 @@ client = HDInsightManagementClient(credentials, SUBSCRIPTION_ID)
 
 ### <a name="create-a-cluster"></a>클러스터 만들기
 
-`client.clusters.create()`을(를) 호출하여 새 클러스터를 만들 수 있습니다. 
+`client.clusters.create()`을(를) 호출하여 새 클러스터를 만들 수 있습니다.
+
+#### <a name="samples"></a>샘플
+
+몇 가지 일반적인 유형의 HDInsight 클러스터를 만드는 코드 샘플([HDInsight Python 샘플](https://github.com/Azure-Samples/hdinsight-python-sdk-samples))도 사용할 수 있습니다.
 
 #### <a name="example"></a>예
 
@@ -235,10 +239,6 @@ client.clusters.create(
         properties=params
     ))
 ```
-
-#### <a name="samples"></a>샘플
-
-몇 가지 일반적인 유형의 HDInsight 클러스터를 만드는 코드 샘플([HDInsight Python 샘플](https://github.com/Azure-Samples/hdinsight-python-sdk-samples))도 사용할 수 있습니다.
 
 ### <a name="get-cluster-details"></a>클러스터 세부 정보 가져오기
 
