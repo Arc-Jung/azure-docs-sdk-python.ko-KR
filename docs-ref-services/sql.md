@@ -1,6 +1,6 @@
 ---
 title: Python용 Azure SQL Database 라이브러리
-description: ODBC 드라이버와 pyodbc를 사용하여 Azure SQL Database에 연결하거나 관리 API로 Azure SQL 인스턴스를 관리합니다.
+description: ODBC 드라이버와 pyodbc를 사용하여 Azure SQL 데이터베이스에 연결하거나 관리 API로 Azure SQL 인스턴스를 관리합니다.
 author: lisawong19
 ms.author: liwong
 manager: routlaw
