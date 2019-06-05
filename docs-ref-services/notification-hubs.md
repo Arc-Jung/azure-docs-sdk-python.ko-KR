@@ -11,28 +11,28 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 3a9cc087d315ee2a274d3ef00623b304280017e5
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: ea5ef3722635484d23459d1d39ec6216d4574b85
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277245"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376902"
 ---
-# <a name="azure-notification-hubs-libraries-for-python"></a><span data-ttu-id="24602-104">Python용 Azure Notification Hubs 라이브러리</span><span class="sxs-lookup"><span data-stu-id="24602-104">Azure Notification Hubs libraries for python</span></span>
+# <a name="azure-notification-hubs-libraries-for-python"></a><span data-ttu-id="3c347-104">Python용 Azure Notification Hubs 라이브러리</span><span class="sxs-lookup"><span data-stu-id="3c347-104">Azure Notification Hubs libraries for python</span></span>
 
-## <a name="management-apipythonapioverviewazurenotificationhubsmanagement"></a>[<span data-ttu-id="24602-105">관리 API</span><span class="sxs-lookup"><span data-stu-id="24602-105">Management API</span></span>](/python/api/overview/azure/notificationhubs/management)
+## <a name="management-apipythonapioverviewazurenotificationhubsmanagement"></a>[<span data-ttu-id="3c347-105">관리 API</span><span class="sxs-lookup"><span data-stu-id="3c347-105">Management API</span></span>](/python/api/overview/azure/notificationhubs/management)
 
 ```bash
 pip install azure-mgmt-notificationhubs
 ```
 
-## <a name="create-the-management-client"></a><span data-ttu-id="24602-106">관리 클라이언트 만들기</span><span class="sxs-lookup"><span data-stu-id="24602-106">Create the management client</span></span>
+## <a name="create-the-management-client"></a><span data-ttu-id="3c347-106">관리 클라이언트 만들기</span><span class="sxs-lookup"><span data-stu-id="3c347-106">Create the management client</span></span>
 
-<span data-ttu-id="24602-107">다음 코드는 관리 클라이언트의 인스턴스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="24602-107">The following code creates an instance of the management client.</span></span>
+<span data-ttu-id="3c347-107">다음 코드는 관리 클라이언트의 인스턴스를 만듭니다.</span><span class="sxs-lookup"><span data-stu-id="3c347-107">The following code creates an instance of the management client.</span></span>
 
-<span data-ttu-id="24602-108">[구독 목록](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping)에서 검색할 수 있는 ``subscription_id``를 제공해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="24602-108">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
+<span data-ttu-id="3c347-108">[구독 목록](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping)에서 검색할 수 있는 ``subscription_id``를 제공해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="3c347-108">You will need to provide your ``subscription_id`` which can be retrieved from [your subscription list](https://manage.windowsazure.com/#Workspaces/AdminTasks/SubscriptionMapping).</span></span>
 
-<span data-ttu-id="24602-109">Python SDK를 사용하여 Azure Active Directory 인증을 처리하고 ``Credentials`` 인스턴스를 만드는 방법에 대한 자세한 내용은 [리소스 관리 인증](/python/azure/python-sdk-azure-authenticate)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="24602-109">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
+<span data-ttu-id="3c347-109">Python SDK를 사용하여 Azure Active Directory 인증을 처리하고 ``Credentials`` 인스턴스를 만드는 방법에 대한 자세한 내용은 [리소스 관리 인증](/python/azure/python-sdk-azure-authenticate)을 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="3c347-109">See [Resource Management Authentication](/python/azure/python-sdk-azure-authenticate) for details on handling Azure Active Directory authentication with the Python SDK, and creating a ``Credentials`` instance.</span></span>
 
 ```python
 from azure.mgmt.notificationhubs import NotificationHubsManagementClient
@@ -53,9 +53,10 @@ redis_client = NotificationHubsManagementClient(
 )
 ```
 
-## <a name="check-namespace-availability"></a><span data-ttu-id="24602-110">네임스페이스 가용성 확인</span><span class="sxs-lookup"><span data-stu-id="24602-110">Check namespace availability</span></span>
+## <a name="check-namespace-availability"></a><span data-ttu-id="3c347-110">네임스페이스 가용성 확인</span><span class="sxs-lookup"><span data-stu-id="3c347-110">Check namespace availability</span></span>
 
-<span data-ttu-id="24602-111">다음 코드는 알림 허브의 네임스페이스의 가용성을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="24602-111">The following code check namespace availability of a notification hub.</span></span>
+<span data-ttu-id="3c347-111">다음 코드는 알림 허브의 네임스페이스의 가용성을 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="3c347-111">The following code check namespace availability of a notification hub.</span></span>
+
 ```python
 from azure.mgmt.notificationhubs.models import CheckAvailabilityParameters
 
@@ -70,4 +71,4 @@ print(output.is_availiable) # Yes, it's 'availiable', it's a typo in the REST AP
 ```
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="24602-112">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="24602-112">Explore the Management APIs</span></span>](/python/api/overview/azure/notificationhubs/management)
+> [<span data-ttu-id="3c347-112">관리 API 탐색</span><span class="sxs-lookup"><span data-stu-id="3c347-112">Explore the Management APIs</span></span>](/python/api/overview/azure/notificationhubs/management)
