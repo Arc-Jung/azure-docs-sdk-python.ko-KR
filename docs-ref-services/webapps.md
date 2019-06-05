@@ -11,18 +11,18 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: appservice
-ms.openlocfilehash: 8e8dd78cbc2d5887308361a47a9571ce242aee6e
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: 4870394c6ee39cde546d090fa1a0d136609851b3
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29479226"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376695"
 ---
 # <a name="azure-web-apps-libraries-for-python"></a>Python용 Azure Web Apps 라이브러리
 
 ## <a name="overview"></a>개요
 
-[Azure App Service](/azure/app-service)를 사용하여 웹 사이트, 웹 응용 프로그램, 서비스 및 REST API를 배포하고 크기 조정합니다.
+[Azure App Service](/azure/app-service)를 사용하여 웹 사이트, 웹 애플리케이션, 서비스 및 REST API를 배포하고 크기 조정합니다.
 
 Azure App Service를 시작하려면 [Azure에서 Python 웹앱 만들기](/azure/app-service-web/app-service-web-get-started-python)를 참조하세요.
 
@@ -67,15 +67,16 @@ source_control_async_operation = web_client.web_apps.create_or_update_source_con
     )
 )
 ```
+
 > [!div class="nextstepaction"]
 > [관리 API 탐색](/python/api/overview/azure/webapps/management)
 
-## <a name="samples"></a>샘플 
+## <a name="samples"></a>샘플
 
 * [Python을 사용하여 Azure 웹 사이트 관리(영문)][1]
 * [논리 앱 워크플로 만들기][2]
- 
-웹 애플리케이션 샘플의 [전체 목록](https://azure.microsoft.com/en-us/resources/samples/?platform=python&term=web-app)을 봅니다.
+
+웹 애플리케이션 샘플의 [전체 목록](https://azure.microsoft.com/resources/samples/?platform=python&term=web-app)을 봅니다.
 
 [1]: https://azure.microsoft.com/resources/samples/app-service-web-python-manage
 [2]: ../docs-ref-conceptual/python-sdk-azure-samples-logic-app-workflow.md

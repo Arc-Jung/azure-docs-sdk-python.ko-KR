@@ -11,18 +11,18 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: batch
-ms.openlocfilehash: de5f3a98b1712ff9bdcc417daf10719178819364
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: fb9528c449d197440590bfc3b1991065cfe13357
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478986"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376832"
 ---
 # <a name="azure-batch-libraries-for-python"></a>Python용 Azure Batch 라이브러리
 
 ## <a name="overview"></a>개요
 
-[Azure Batch](/azure/batch/batch-technical-overview)를 사용하여 클라우드에서 대규모 병렬 및 고성능 컴퓨팅 응용 프로그램을 효율적으로 실행합니다.   
+[Azure Batch](/azure/batch/batch-technical-overview)를 사용하여 클라우드에서 대규모 병렬 및 고성능 컴퓨팅 애플리케이션을 효율적으로 실행합니다.
 
 Azure Batch를 시작하려면 [Azure Portal에서 Batch 계정 만들기](/azure/batch/batch-account-create-portal)를 참조하세요.
 

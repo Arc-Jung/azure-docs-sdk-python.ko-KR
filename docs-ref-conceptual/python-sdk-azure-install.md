@@ -11,16 +11,17 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 792feac12f8328e2467017530065350e347c59b7
-ms.sourcegitcommit: 757bf84535fd9d8299c4b51ec92a5ab1926cb671
+ms.openlocfilehash: 6014937fb41d6074e94578ccc47c30eb7b3f63d2
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/27/2018
-ms.locfileid: "29565822"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376873"
 ---
 # <a name="installation"></a>설치
 
 ## <a name="which-python-and-which-version-to-use"></a>사용할 Python 및 버전
+
 몇 가지의 Python 인터프리터가 있으며 다음을 예로 들 수 있습니다.
 
 * CPython - 가장 일반적으로 사용되는 표준 Python 인터프리터
@@ -31,6 +32,7 @@ ms.locfileid: "29565822"
 **CPython** v2.7 또는 v3.4+ 이상 및 PyPy 5.4.0은 Python Azure SDK에 대해 테스트 및 지원됩니다.
 
 ## <a name="where-to-get-python"></a>Python을 구하는 위치
+
 CPython을 구하는 몇 가지 방법이 있습니다.
 
 * [Python](https://www.python.org/)에서 직접
@@ -70,6 +72,8 @@ pip install --pre azure
 
 원본에서 `azure`를 설치하려면 다음과 같습니다.
 
-    git clone git://github.com/Azure/azure-sdk-for-python.git
-    cd azure-sdk-for-python
-    python setup.py install
+```bash
+git clone git://github.com/Azure/azure-sdk-for-python.git
+cd azure-sdk-for-python
+python setup.py install
+```
