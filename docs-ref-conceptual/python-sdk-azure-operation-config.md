@@ -10,20 +10,20 @@ ms.topic: article
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: d7be7cd76d019c6741d93c04458376a9352e363b
-ms.sourcegitcommit: 41e6e6b5469271f4ec497a322b460e2a2af2c73d
+ms.openlocfilehash: adeb6aa8a2c363c3119e97503df9536fb0633b4c
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/28/2018
-ms.locfileid: "30204262"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376870"
 ---
 # <a name="operation-config"></a>작업 구성 
 
-작업 방법에는 kwargs에서 제공할 수 있는 추가 매개 변수가 있습니다. 이를 operation_config라고 합니다.
+작업에 대한 메서드에는 `kwargs`에서 제공할 수 있는 추가 매개 변수가 있습니다. 이를 operation_config라고 합니다.
 
 작업 구성을 위한 옵션은 다음과 같습니다.
 
-|매개 변수 이름|유형|역할|
+|매개 변수 이름|Type|역할|
 |----------------------|------|---------------|
 | verify |`bool`|SSL 인증서를 확인할지 지정합니다. 기본값은 True입니다.|
 |  cert |`str`| 클라이언트 측 확인을 위한 로컬 인증서의 경로입니다.|
