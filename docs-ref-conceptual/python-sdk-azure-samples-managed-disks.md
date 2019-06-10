@@ -10,27 +10,25 @@ ms.service: Azure
 ms.technology: Azure
 ms.date: 6/15/2017
 ms.author: liwong
-ms.openlocfilehash: 733bd0ffce6ddb10219dae40bad6ea54e1efcd70
-ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
+ms.openlocfilehash: bee17efdb90d6365acb2adbf9c01d1f7e843da42
+ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/07/2018
-ms.locfileid: "33839408"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66376855"
 ---
-# <a name="managed-disks"></a><span data-ttu-id="863bb-103">Managed Disks</span><span class="sxs-lookup"><span data-stu-id="863bb-103">Managed Disks</span></span>
+# <a name="managed-disks"></a><span data-ttu-id="10b3e-103">Managed Disks</span><span class="sxs-lookup"><span data-stu-id="10b3e-103">Managed Disks</span></span>
 
-<span data-ttu-id="863bb-104">이제 하나의 확장 집합에서 Azure Managed Disks 및 1,000개 VM을 [일반적으로 사용](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/)할 수 있습니다. Azure Managed Disks는 간소화된 디스크 관리, 향상된 확장성, 더 효율적인 보안 및 크기 조정 기능을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-104">Azure Managed Disks and 1000 VMs in a Scale Set are now [generally available](https://azure.microsoft.com/en-us/blog/announcing-general-availability-of-managed-disks-and-larger-scale-sets/) Azure Managed Disks provide a simplified disk Management, enhanced Scalability, better Security and Scale.</span></span> <span data-ttu-id="863bb-105">디스크에 대한 저장소 계정의 개념을 없앰으로써 고객이 저장소 계정과 관련된 제한을 걱정하지 않고 크기 조정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-105">It takes away the notion of storage account for disks, enabling customers to scale without worrying about the limitations associated with storage accounts.</span></span> <span data-ttu-id="863bb-106">이 게시물에서는 Python에서 서비스를 사용하는 방법에 대한 간단한 소개와 참조를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-106">This post provides a quick introduction and reference on consuming the service from Python.</span></span>
+<span data-ttu-id="10b3e-104">Azure Managed Disks는 간소화된 디스크 관리, 향상된 확장성, 더 나은 보안 및 크기 조정을 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-104">Azure Managed Disks provide a simplified disk Management, enhanced Scalability, better Security and Scale.</span></span> <span data-ttu-id="10b3e-105">디스크에 대한 저장소 계정의 개념을 없앰으로써 고객이 저장소 계정과 관련된 제한을 걱정하지 않고 크기 조정할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-105">It takes away the notion of storage account for disks, enabling customers to scale without worrying about the limitations associated with storage accounts.</span></span> <span data-ttu-id="10b3e-106">이 게시물에서는 Python에서 서비스를 사용하는 방법에 대한 간단한 소개와 참조를 제공합니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-106">This post provides a quick introduction and reference on consuming the service from Python.</span></span>
 
+<span data-ttu-id="10b3e-107">개발자 관점에서 Azure CLI의 Managed Disks 환경은 다른 플랫폼 간 도구의 CLI 환경에 관용적입니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-107">From a developer perspective, the Managed Disks experience in Azure CLI is idomatic to the CLI experience in other cross-platform tools.</span></span> <span data-ttu-id="10b3e-108">[Azure Python](https://azure.microsoft.com/develop/python/) SDK와 [azure-mgmt-compute 패키지 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute)을 사용하여 Managed Disks를 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-108">You can use the [Azure Python](https://azure.microsoft.com/develop/python/) SDK and the [azure-mgmt-compute package 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) to administer Managed Disks.</span></span> <span data-ttu-id="10b3e-109">이 [자습서](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python)를 사용하여 계산 클라이언트를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-109">You can create a compute client using this [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).</span></span>
 
+## <a name="standalone-managed-disks"></a><span data-ttu-id="10b3e-110">독립 실행형 Managed Disks</span><span class="sxs-lookup"><span data-stu-id="10b3e-110">Standalone Managed Disks</span></span>
 
-<span data-ttu-id="863bb-107">개발자 관점에서 Azure CLI의 Managed Disks 환경은 다른 플랫폼 간 도구의 CLI 환경에 관용적입니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-107">From a developer perspective, the Managed Disks experience in Azure CLI is idomatic to the CLI experience in other cross-platform tools.</span></span> <span data-ttu-id="863bb-108">[Azure Python](https://azure.microsoft.com/develop/python/) SDK와 [azure-mgmt-compute 패키지 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute)을 사용하여 Managed Disks를 관리할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-108">You can use the [Azure Python](https://azure.microsoft.com/develop/python/) SDK and the [azure-mgmt-compute package 0.33.0](https://pypi.python.org/pypi/azure-mgmt-compute) to administer Managed Disks.</span></span> <span data-ttu-id="863bb-109">이 [자습서](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python)를 사용하여 계산 클라이언트를 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-109">You can create a compute client using this [tutorial](https://docs.microsoft.com/python/api/overview/azure/virtualmachines?view=azure-python).</span></span>
+<span data-ttu-id="10b3e-111">독립 실행형 Managed Disks는 다양한 방법으로 쉽게 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-111">You can easily create standalone Managed Disks in a variety of ways.</span></span>
 
+### <a name="create-an-empty-managed-disk"></a><span data-ttu-id="10b3e-112">빈 Managed Disk 만들기</span><span class="sxs-lookup"><span data-stu-id="10b3e-112">Create an empty Managed Disk</span></span>
 
-## <a name="standalone-managed-disks"></a><span data-ttu-id="863bb-110">독립 실행형 Managed Disks</span><span class="sxs-lookup"><span data-stu-id="863bb-110">Standalone Managed Disks</span></span>
-
-<span data-ttu-id="863bb-111">독립 실행형 Managed Disks는 다양한 방법으로 쉽게 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-111">You can easily create standalone Managed Disks in a variety of ways.</span></span>
-
-### <a name="create-an-empty-managed-disk"></a><span data-ttu-id="863bb-112">빈 관리 디스크 만들기</span><span class="sxs-lookup"><span data-stu-id="863bb-112">Create an empty Managed Disk.</span></span>
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -48,7 +46,8 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-### <a name="create-a-managed-disk-from-blob-storage"></a><span data-ttu-id="863bb-113">Blob Storage에서 관리 디스크 만들기</span><span class="sxs-lookup"><span data-stu-id="863bb-113">Create a Managed Disk from Blob Storage.</span></span>
+### <a name="create-a-managed-disk-from-blob-storage"></a><span data-ttu-id="10b3e-113">Blob 스토리지에서 Managed Disk 만들기</span><span class="sxs-lookup"><span data-stu-id="10b3e-113">Create a Managed Disk from blob storage</span></span>
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -66,7 +65,8 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-### <a name="create-a-managed-disk-from-your-own-image"></a><span data-ttu-id="863bb-114">사용자 고유의 이미지에서 관리 디스크 만들기</span><span class="sxs-lookup"><span data-stu-id="863bb-114">Create a Managed Disk from your own Image</span></span>
+### <a name="create-a-managed-disk-from-your-own-image"></a><span data-ttu-id="10b3e-114">사용자 고유의 이미지에서 Managed Disk 만들기</span><span class="sxs-lookup"><span data-stu-id="10b3e-114">Create a Managed Disk from your own image</span></span>
+
 ```python
 from azure.mgmt.compute.models import DiskCreateOption
 
@@ -87,11 +87,11 @@ async_creation = compute_client.disks.create_or_update(
 disk_resource = async_creation.result()
 ```
 
-## <a name="virtual-machine-with-managed-disks"></a><span data-ttu-id="863bb-115">Managed Disks가 있는 Virtual Machine</span><span class="sxs-lookup"><span data-stu-id="863bb-115">Virtual Machine with Managed Disks</span></span>
+## <a name="virtual-machine-with-managed-disks"></a><span data-ttu-id="10b3e-115">Managed Disks가 있는 가상 머신</span><span class="sxs-lookup"><span data-stu-id="10b3e-115">Virtual machine with Managed Disks</span></span>
 
-<span data-ttu-id="863bb-116">특정 디스크 이미지에 대한 암시적 관리 디스크가 있는 Virtual Machine을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-116">You can create a Virtual Machine with an implicit Managed Disk for a specific disk image.</span></span> <span data-ttu-id="863bb-117">간단히 만들려면 모든 디스크 세부 정보를 지정하지 않고 관리 디스크를 암시적으로 만들면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-117">Creation is simplified with implicit creation of managed disks without specifying all the disk details.</span></span> <span data-ttu-id="863bb-118">이 경우 저장소 계정을 만들고 관리하는 것에 대해 걱정할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-118">You do not have to worry about creating and managing Storage Accounts.</span></span>
+<span data-ttu-id="10b3e-116">특정 디스크 이미지에 대한 암시적 관리 디스크가 있는 Virtual Machine을 만들 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-116">You can create a Virtual Machine with an implicit Managed Disk for a specific disk image.</span></span> <span data-ttu-id="10b3e-117">간단히 만들려면 모든 디스크 세부 정보를 지정하지 않고 관리 디스크를 암시적으로 만들면 됩니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-117">Creation is simplified with implicit creation of managed disks without specifying all the disk details.</span></span> <span data-ttu-id="10b3e-118">이 경우 저장소 계정을 만들고 관리하는 것에 대해 걱정할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-118">You do not have to worry about creating and managing Storage Accounts.</span></span>
 
-<span data-ttu-id="863bb-119">관리 디스크는 Azure의 OS 이미지에서 VM을 만들 때 암시적으로 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-119">A Managed Disk is created implicitly when creating VM from an OS image in Azure.</span></span> <span data-ttu-id="863bb-120">``storage_profile`` 매개 변수에서 ``os_disk``는 이제 선택적 요소이며 Virtual Machine을 만드는 데 필요한 전제 조건으로 저장소 계정을 만들 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-120">In the ``storage_profile`` parameter, ``os_disk`` is now optional and you don't have to create a storage account as required precondition to create a Virtual Machine.</span></span>
+<span data-ttu-id="10b3e-119">관리 디스크는 Azure의 OS 이미지에서 VM을 만들 때 암시적으로 만들어집니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-119">A Managed Disk is created implicitly when creating VM from an OS image in Azure.</span></span> <span data-ttu-id="10b3e-120">``storage_profile`` 매개 변수에서 ``os_disk``는 이제 선택적 요소이며 Virtual Machine을 만드는 데 필요한 전제 조건으로 저장소 계정을 만들 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-120">In the ``storage_profile`` parameter, ``os_disk`` is now optional and you don't have to create a storage account as required precondition to create a Virtual Machine.</span></span>
 
 ```python
 storage_profile = azure.mgmt.compute.models.StorageProfile(
@@ -102,10 +102,12 @@ storage_profile = azure.mgmt.compute.models.StorageProfile(
         version='latest'
     )
 )
-``` 
-<span data-ttu-id="863bb-121">이 ``storage_profile`` 매개 변수는 이제 유효합니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-121">This ``storage_profile`` parameter is now valid.</span></span> <span data-ttu-id="863bb-122">Python(네트워크 등 포함)에서 VM을 만드는 방법에 대한 완전한 예제를 얻으려면 [Python의 VM 자습서](https://github.com/Azure-Samples/virtual-machines-python-manage) 전체를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-122">To get a complete example on how to create a VM in Python (including network, etc), check the full [VM tutorial in Python](https://github.com/Azure-Samples/virtual-machines-python-manage).</span></span>
+```
 
-<span data-ttu-id="863bb-123">이전에 프로비전된 관리 디스크를 쉽게 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-123">You can easily attach a previously provisioned Managed Disk.</span></span>
+<span data-ttu-id="10b3e-121">이 ``storage_profile`` 매개 변수는 이제 유효합니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-121">This ``storage_profile`` parameter is now valid.</span></span> <span data-ttu-id="10b3e-122">Python(네트워크 등 포함)에서 VM을 만드는 방법에 대한 완전한 예제를 얻으려면 [Python의 VM 자습서](https://github.com/Azure-Samples/virtual-machines-python-manage) 전체를 확인합니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-122">To get a complete example on how to create a VM in Python (including network, etc), check the full [VM tutorial in Python](https://github.com/Azure-Samples/virtual-machines-python-manage).</span></span>
+
+<span data-ttu-id="10b3e-123">이전에 프로비전된 관리 디스크를 쉽게 연결할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-123">You can easily attach a previously provisioned Managed Disk.</span></span>
+
 ```python
 vm = compute.virtual_machines.get(
     'my_resource_group',
@@ -128,11 +130,11 @@ async_update = compute_client.virtual_machines.create_or_update(
 async_update.wait()
 ```
 
-## <a name="virtual-machine-scale-sets-with-managed-disks"></a><span data-ttu-id="863bb-124">Managed Disks를 포함하는 Virtual Machine Scale Sets</span><span class="sxs-lookup"><span data-stu-id="863bb-124">Virtual Machine Scale Sets with Managed Disks</span></span>
+## <a name="virtual-machine-scale-sets-with-managed-disks"></a><span data-ttu-id="10b3e-124">Managed Disks를 사용한 Virtual Machine Scale Sets</span><span class="sxs-lookup"><span data-stu-id="10b3e-124">Virtual machine Scale Sets with Managed Disks</span></span>
 
-<span data-ttu-id="863bb-125">Managed Disks 이전에는 필요한 모든 VM에 대한 저장소 계정을 확장 집합 내에서 수동으로 만든 다음 ``vhd_containers`` list 매개 변수를 사용하여 모든 저장소 계정 이름을 확장 집합 Rest API에 제공해야 했습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-125">Before Managed Disks, you needed to create a storage account manually for all the VMs you wanted inside your Scale Set, and then use the list parameter ``vhd_containers`` to provide all the storage account name to the Scale Set RestAPI.</span></span> <span data-ttu-id="863bb-126">공식적인 전환 가이드는 이 문서의 내용 `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-126">The official transition guide is available in this article `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.</span></span>
+<span data-ttu-id="10b3e-125">Managed Disks 이전에는 필요한 모든 VM에 대한 저장소 계정을 확장 집합 내에서 수동으로 만든 다음 ``vhd_containers`` list 매개 변수를 사용하여 모든 저장소 계정 이름을 확장 집합 Rest API에 제공해야 했습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-125">Before Managed Disks, you needed to create a storage account manually for all the VMs you wanted inside your Scale Set, and then use the list parameter ``vhd_containers`` to provide all the storage account name to the Scale Set RestAPI.</span></span> <span data-ttu-id="10b3e-126">공식적인 전환 가이드는 이 문서의 내용 `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`에서 사용할 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-126">The official transition guide is available in this article `<https://docs.microsoft.com/azure/virtual-machine-scale-sets/virtual-machine-scale-sets-convert-template-to-md>`.</span></span>
 
-<span data-ttu-id="863bb-127">이제 관리 디스크를 사용하면 저장소 계정을 전혀 관리할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-127">Now with Managed Disk, you don't have to manage any storage account at all.</span></span> <span data-ttu-id="863bb-128">VMSS Python SDK에 익숙하다면 ``storage_profile``은 이제 VM을 만드는 데 사용된 매개 변수와 똑같을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-128">If you're are used to the VMSS Python SDK, your ``storage_profile`` can now be exactly the same as the one used in VM creation:</span></span>
+<span data-ttu-id="10b3e-127">이제 관리 디스크를 사용하면 저장소 계정을 전혀 관리할 필요가 없습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-127">Now with Managed Disk, you don't have to manage any storage account at all.</span></span> <span data-ttu-id="10b3e-128">VMSS Python SDK에 익숙하다면 ``storage_profile``은 이제 VM을 만드는 데 사용된 매개 변수와 똑같을 수 있습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-128">If you're are used to the VMSS Python SDK, your ``storage_profile`` can now be exactly the same as the one used in VM creation:</span></span>
 
 ```python
 'storage_profile': {
@@ -145,7 +147,7 @@ async_update.wait()
 },
 ```
 
-<span data-ttu-id="863bb-129">전체 샘플은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="863bb-129">The full sample being:</span></span>
+<span data-ttu-id="10b3e-129">전체 샘플은 다음과 같습니다.</span><span class="sxs-lookup"><span data-stu-id="10b3e-129">The full sample being:</span></span>
 
 ```python
 naming_infix = "PyTestInfix"
@@ -196,11 +198,11 @@ result_create = compute_client.virtual_machine_scale_sets.create_or_update(
     vmss_parameters,
 )
 vmss_result = result_create.result()
-``` 
+```
 
-## <a name="other-operations-with-managed-disks"></a><span data-ttu-id="863bb-130">기타 Managed Disks 작업</span><span class="sxs-lookup"><span data-stu-id="863bb-130">Other Operations with Managed Disks</span></span>
+## <a name="other-operations-with-managed-disks"></a><span data-ttu-id="10b3e-130">기타 Managed Disks 작업</span><span class="sxs-lookup"><span data-stu-id="10b3e-130">Other operations with Managed Disks</span></span>
 
-### <a name="resizing-a-managed-disk"></a><span data-ttu-id="863bb-131">관리 디스크 크기 조정</span><span class="sxs-lookup"><span data-stu-id="863bb-131">Resizing a managed disk.</span></span>
+### <a name="resizing-a-managed-disk"></a><span data-ttu-id="10b3e-131">Managed Disk 크기 조정</span><span class="sxs-lookup"><span data-stu-id="10b3e-131">Resizing a Managed Disk</span></span>
 
 ```python
 managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
@@ -213,7 +215,8 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="update-the-storage-account-type-of-the-managed-disks"></a><span data-ttu-id="863bb-132">Managed Disks의 저장소 계정 유형 업데이트</span><span class="sxs-lookup"><span data-stu-id="863bb-132">Update the Storage Account type of the Managed Disks.</span></span>
+### <a name="update-the-storage-account-type-of-the-managed-disks"></a><span data-ttu-id="10b3e-132">Managed Disks의 스토리지 계정 유형 업데이트</span><span class="sxs-lookup"><span data-stu-id="10b3e-132">Update the storage account type of the Managed Disks</span></span>
+
 ```python
 from azure.mgmt.compute.models import StorageAccountTypes
 
@@ -227,7 +230,8 @@ async_update = self.compute_client.disks.create_or_update(
 async_update.wait()
 ```
 
-### <a name="create-an-image-from-blob-storage"></a><span data-ttu-id="863bb-133">Blob 저장소에서 이미지 만들기</span><span class="sxs-lookup"><span data-stu-id="863bb-133">Create an image from Blob Storage.</span></span>
+### <a name="create-an-image-from-nlob-storage"></a><span data-ttu-id="10b3e-133">Blob Storage에서 이미지 만들기</span><span class="sxs-lookup"><span data-stu-id="10b3e-133">Create an image from nlob storage</span></span>
+
 ```python
 async_create_image = compute_client.images.create_or_update(
     'my_resource_group',
@@ -247,7 +251,8 @@ async_create_image = compute_client.images.create_or_update(
 image = async_create_image.result()
 ```
 
-### <a name="create-a-snapshot-of-a-managed-disk-that-is-currently-attached-to-a-virtual-machine"></a><span data-ttu-id="863bb-134">현재 Virtual Machine에 연결된 관리 디스크의 스냅숏 만들기</span><span class="sxs-lookup"><span data-stu-id="863bb-134">Create a snapshot of a Managed Disk that is currently attached to a Virtual Machine.</span></span>
+### <a name="create-a-snapshot-of-a-managed-disk-that-is-currently-attached-to-a-virtual-machine"></a><span data-ttu-id="10b3e-134">현재 가상 머신에 연결된 Managed Disk의 스냅샷 만들기</span><span class="sxs-lookup"><span data-stu-id="10b3e-134">Create a snapshot of a Managed Disk that is currently attached to a virtual machine</span></span>
+
 ```python
 managed_disk = compute_client.disks.get('my_resource_group', 'myDisk')
 async_snapshot_creation = self.compute_client.snapshots.create_or_update(
