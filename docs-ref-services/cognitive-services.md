@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 736b2dd747842caa50418afc8219dafae655db39
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: 5890c2091f8456dd9b8bcb68f8a34eed3cae6e04
+ms.sourcegitcommit: d7ad0e8b4ba4add5e6f63e6b9eac54ecccdc7090
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52277460"
+ms.lasthandoff: 06/14/2019
+ms.locfileid: "67148168"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Python용 Azure Cognitive Services 모듈
 
@@ -49,7 +49,7 @@ Computer Vision API에 대해 [자세히 알아보고](/azure/cognitive-services
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
 ```
-pip install azure-cognitiveservices-vision-computervision
+pip install azure-cognitiveservices-vision-contentmoderator
 ```
 
 Content Moderator 서비스에 대해 [자세히 알아보세요](/azure/cognitive-services/content-moderator/overview).
