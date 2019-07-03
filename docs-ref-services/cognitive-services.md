@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 5890c2091f8456dd9b8bcb68f8a34eed3cae6e04
-ms.sourcegitcommit: d7ad0e8b4ba4add5e6f63e6b9eac54ecccdc7090
+ms.openlocfilehash: 5a23a52414e70facd6feae3af3956a5131f6b5c4
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "67148168"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534348"
 ---
 # <a name="azure-cognitive-services-modules-for-python"></a>Python용 Azure Cognitive Services 모듈
 
@@ -36,7 +36,7 @@ Python용 Azure Cognitive Services 모듈을 사용하여 Python 앱, 웹 사이
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-vision-computervision
 ```
 
@@ -48,7 +48,7 @@ Computer Vision API에 대해 [자세히 알아보고](/azure/cognitive-services
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-vision-contentmoderator
 ```
 
@@ -60,7 +60,7 @@ Content Moderator 서비스에 대해 [자세히 알아보세요](/azure/cogniti
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-vision-customvision
 ```
 
@@ -74,7 +74,7 @@ Custom Vision 서비스에 대해 [자세히 알아보고](/azure/cognitive-serv
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install cognitive-face
 ```
 
@@ -90,7 +90,7 @@ Bing Web Search API로 인덱싱된 웹 문서를 검색하고 결과 형식, �
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-search-websearch
 ```
 
@@ -104,7 +104,7 @@ Bing Web Search API에 대해 [자세히 알아보고](/azure/cognitive-services
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-search-imagesearch
 ```
 
@@ -119,7 +119,7 @@ Bing Image Search API에 대해 [자세히 알아보고](/azure/cognitive-servic
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-search-entitysearch
 ```
 
@@ -131,7 +131,7 @@ Bing Entity Search API에 대해 [자세히 알아보고](/azure/cognitive-servi
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-search-customsearch
 ```
 
@@ -145,7 +145,7 @@ Bing Custom Search 서비스에 대해 [자세히 알아보고](/azure/cognitive
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-search-videosearch
 ```
 
@@ -160,11 +160,11 @@ Bing Video Search 서비스에 대해 [자세히 알아보고](/azure/cognitive-
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-search-newssearch
 ```
 
-Bing News Search 서비스에 대해 [자세히 알아보고](/azure/cognitive-services/bing-news-search/search-the-web) [News Search API Python 빠른 시작](//azure/cognitive-services/bing-news-search/python)을 시작하세요.
+Bing News Search 서비스에 대해 [자세히 알아보고](/azure/cognitive-services/bing-news-search/search-the-web) [News Search API Python 빠른 시작](/azure/cognitive-services/bing-news-search/python)을 시작하세요.
 
 
 ## <a name="language-modules"></a>언어 모듈
@@ -181,7 +181,7 @@ Bing News Search 서비스에 대해 [자세히 알아보고](/azure/cognitive-s
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-language-textanalytics
 ```
 
@@ -196,7 +196,7 @@ Bing Spell Check API를 사용하여 상황별 문법 및 맞춤법 검사를 �
 
 [pip](https://pip.pypa.io/en/stable/quickstart/)를 사용하여 Python 모듈 가져오기:
 
-```
+```python
 pip install azure-cognitiveservices-language-spellcheck
 ```
 

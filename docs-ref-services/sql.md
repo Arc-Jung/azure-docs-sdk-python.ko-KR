@@ -2,31 +2,31 @@
 title: Python용 Azure SQL Database 라이브러리
 description: ODBC 드라이버와 pyodbc를 사용하여 Azure SQL 데이터베이스에 연결하거나 관리 API로 Azure SQL 인스턴스를 관리합니다.
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: routlaw
 ms.date: 01/09/2018
 ms.topic: reference
 ms.devlang: python
 ms.service: sql-database
-ms.openlocfilehash: 5b73977fb58ed3cb17d675784da921b0e199d165
-ms.sourcegitcommit: 560362db0f65307c8b02b7b7ad8642b5c4aa6294
+ms.openlocfilehash: 9b8a5b120425fc600f34c1e4c4456b0888814fe8
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/08/2018
-ms.locfileid: "33901356"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534208"
 ---
 # <a name="azure-sql-database-libraries-for-python"></a>Python용 Azure SQL Database 라이브러리
 
 ## <a name="overview"></a>개요
 
-pyodbc [ODBC 데이터베이스 드라이버](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers)를 사용하여 Python의 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview)에 저장된 데이터로 작업합니다. [빠른 시작](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python)을 보면서 Azure SQL Database에 연결하고 Transact-SQL 문을 사용하여 데이터를 쿼리하고 pyodbc를 사용하여 [샘플](https://github.com/mkleehammer/pyodbc/wiki/Getting-started)을 시작합니다.
+pyodbc [ODBC 데이터베이스 드라이버](https://github.com/mkleehammer/pyodbc/wiki/Drivers-and-Driver-Managers)를 사용하여 Python의 [Azure SQL Database](/azure/sql-database/sql-database-technical-overview)에 저장된 데이터로 작업합니다. [빠른 시작](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python)을 보면서 Azure SQL 데이터베이스에 연결하고 Transact-SQL 문을 사용하여 데이터를 쿼리하고 pyodbc를 사용하여 [샘플](https://github.com/mkleehammer/pyodbc/wiki/Getting-started)을 시작합니다.
 
 ## <a name="install-odbc-driver-and-pyodbc"></a>ODBC 드라이버 및 pyodbc 설치
 
 ```bash
 pip install pyodbc
 ```
-Python 및 데이터베이스 통신 라이브러리 설치에 대한 [세부 정보](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries)입니다.
+Python 및 데이터베이스 통신 라이브러리 설치에 대한 [세부 정보](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#prerequisites)입니다.
 
 ## <a name="connect-and-execute-a-sql-query"></a>SQL 쿼리 연결 및 실행
 
@@ -60,7 +60,7 @@ while row:
 
 ## <a name="connecting-to-orms"></a>ORM에 연결
 
-pyodbc는 [SQLAlchemy](http://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) 및 [Django](https://github.com/lionheart/django-pyodbc/) 등의 다른 ORM과 함께 작동합니다. 
+pyodbc는 [SQLAlchemy](https://docs.sqlalchemy.org/en/latest/dialects/mssql.html?highlight=pyodbc#module-sqlalchemy.dialects.mssql.pyodbc) 및 [Django](https://github.com/lionheart/django-pyodbc/) 등의 다른 ORM과 함께 작동합니다. 
 
 ## <a name="management-apipythonapioverviewazuresqlmanagement"></a>[관리 API](/python/api/overview/azure/sql/management)
 

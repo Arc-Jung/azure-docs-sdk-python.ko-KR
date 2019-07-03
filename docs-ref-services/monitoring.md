@@ -3,7 +3,7 @@ title: Python용 Azure 모니터링 라이브러리
 description: Python용 Azure 모니터링 라이브러리에 대한 참조
 keywords: Azure, Python, SDK, API, 모니터링
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 07/19/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 36746da246db2467b336a2eb14bfe2f6300b6ea4
-ms.sourcegitcommit: 993aacad1d19d87533023f154c015d840723d716
+ms.openlocfilehash: 6408854e48378c27da56185899db5e1cc7f939e5
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 03/07/2019
-ms.locfileid: "57528061"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534256"
 ---
 # <a name="azure-monitoring-libraries-for-python"></a>Python용 Azure 모니터링 라이브러리
 

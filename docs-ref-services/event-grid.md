@@ -3,25 +3,25 @@ title: Python용 Azure Event Grid 라이브러리
 description: ''
 keywords: Azure, Python, SDK, API, Event Grid
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: routlaw
 ms.date: 08/21/2017
 ms.topic: article
 ms.devlang: python
 ms.service: event-grid
-ms.openlocfilehash: bfaa1908295eb77531e399f1337acdeee512005f
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: e5df1078116f13f959923eac3e0c7b5789545278
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52276837"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534293"
 ---
 # <a name="event-grid-libraries-for-python"></a>Python용 Event Grid 라이브러리
 
 
 Azure Event Grid는 게시-구독 모델을 사용하여 균일한 이벤트 소비를 허용하는 완전히 관리되는 지능형 이벤트 라우팅 서비스입니다.
 
-Azure Event Grid에 대해 [자세히 알아보고](/azure/event-grid/overview), [Azure Blob 저장소 이벤트 자습서](/azure/storage/blobs/storage-blob-event-quickstart)를 시작합니다. 
+Azure Event Grid에 대해 [자세히 알아보고](/azure/event-grid/overview), [Azure Blob Storage 이벤트 자습서](/azure/storage/blobs/storage-blob-event-quickstart)를 시작합니다. 
 
 ## <a name="publish-sdk"></a>SDK 게시
 
@@ -88,7 +88,7 @@ pip install azure-mgmt-eventgrid
 ### <a name="example"></a>예
 
 다음에서는 사용자 지정 토픽을 만들고 해당 토픽에 엔트포인트를 등록합니다. 그런 다음, 코드는 HTTPS를 통해 토픽에 이벤트를 보냅니다.
-RequestBin은 오픈 소스이면서 타사 도구로, 이 도구를 통해 엔드포인트를 만들고 엔드포인트에 전송된 요청을 볼 수 있습니다. [RequestBin](https://requestb.in/)으로 이동하고 **RequestBin 만들기**를 클릭합니다. 토픽을 구독할 때 필요하기 때문에 bin URL을 복사합니다.
+RequestBin은 오픈 소스이면서 타사 도구로, 이 도구를 통해 엔드포인트를 만들고 엔드포인트에 전송된 요청을 볼 수 있습니다. [RequestBin](https://requestbin.com)으로 이동하고 **RequestBin 만들기**를 클릭합니다. 토픽을 구독할 때 필요하기 때문에 bin URL을 복사합니다.
 
 ```python
 from azure.mgmt.resource import ResourceManagementClient

@@ -7,12 +7,12 @@ ms.author: tyfox
 ms.date: 04/10/2019
 ms.topic: reference
 ms.devlang: python
-ms.openlocfilehash: ea9599be9fead5f964fbd4ce4e4bdc78a445918c
-ms.sourcegitcommit: 375a1f9180eb1323fe2af0a7e28fd4676973c68e
+ms.openlocfilehash: 3b0799dd77f7ff447ef997b2d142a6744c4a6858
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 04/16/2019
-ms.locfileid: "59586821"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534262"
 ---
 # <a name="hdinsight-sdk-for-python"></a>Python용 HDInsight SDK
 
@@ -32,7 +32,7 @@ Python용 HDInsight SDK는 [Python 패키지 인덱스](https://pypi.org/project
 
 `pip install azure-mgmt-hdinsight`
 
-## <a name="authentication"></a>Authentication
+## <a name="authentication"></a>인증
 
 Azure 구독을 사용해서 SDK를 먼저 인증해야 합니다.  아래 예제에 따라 서비스 주체를 만들고 이를 인증에 사용합니다. 완료되었으면 관리 작업 수행을 위해 사용할 수 있는 여러 메서드(아래 섹션 참조)가 포함된 `HDInsightManagementClient` 인스턴스가 준비됩니다.
 
@@ -259,7 +259,7 @@ print(my_cluster)
 
 출력은 다음과 같습니다.
 
-```
+```output
 {'additional_properties': {}, 'id': '/subscriptions/XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX/resourceGroups/<Resource Group Name>/providers/Microsoft.HDInsight/clusters/<Cluster Name>', 'name': '<Cluster Name>', 'type': 'Microsoft.HDInsight/clusters', 'location': '<Location>', 'tags': {}, 'etag': 'XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX', 'properties': <azure.mgmt.hdinsight.models.cluster_get_properties_py3.ClusterGetProperties object at 0x0000013766D68048>}
 ```
 

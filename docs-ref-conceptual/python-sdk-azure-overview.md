@@ -3,7 +3,7 @@ title: Python용 Azure 라이브러리
 description: Python용 Azure 관리 및 서비스 라이브러리에 대한 개요입니다.
 keywords: Azure, Python, SDK, API
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/01/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.technology: azure
 ms.devlang: python
 ms.service: multiple
 ms.assetid: ''
-ms.openlocfilehash: 2b3e6d31edd7b946664853b3478e22205ab8c92e
-ms.sourcegitcommit: 41e90fe75de03d397079a276cdb388305290e27e
+ms.openlocfilehash: bb17295de2f0272f0525fda5edab87e840764478
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 02/23/2018
-ms.locfileid: "29478806"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534462"
 ---
 # <a name="azure-libraries-for-python"></a>Python용 Azure 라이브러리
 
@@ -83,4 +83,4 @@ print(blob_service.make_blob_url('mycontainername', 'myblobname'))
 
 ## <a name="get-help-and-give-feedback"></a>도움말 가져오기 및 피드백 제공
 
-[Stack Overflow](http://stackoverflow.com/questions/tagged/azure-sdk-python)에서 커뮤니티에 질문을 게시하고 [프로젝트 GitHub](https://github.com/Azure/azure-sdk-for-python)에서 SDK에 대한 문제를 엽니다.
+[Stack Overflow](https://stackoverflow.com/questions/tagged/azure-sdk-python)에서 커뮤니티에 질문을 게시하고 [프로젝트 GitHub](https://github.com/Azure/azure-sdk-for-python)에서 SDK에 대한 문제를 엽니다.

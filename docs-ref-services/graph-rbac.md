@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 27238e00463ae30ec0e47e8c18497ffb9edac62c
-ms.sourcegitcommit: 253c8d4b3dbc2bb76d1a273a757ab96ba37617a1
+ms.openlocfilehash: e9b0aba7998565284ae18e0036da96d033b2b05f
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65731539"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534273"
 ---
 # <a name="azure-active-directory-graph-libraries-for-python"></a>Python용 Azure Active Directory Graph 라이브러리
 
@@ -30,7 +30,7 @@ ms.locfileid: "65731539"
 
 ## <a name="overview"></a>개요 
 
-[Active Directory Graph](/azure/active-directory/develop/active-directory-graph-apis)를 사용하여 사용자로 로그온하고 애플리케이션 및 API에 대한 액세스를 제어합니다.   
+[Active Directory Graph](/azure/active-directory/develop/active-directory-graph-api)를 사용하여 사용자로 로그온하고 애플리케이션 및 API에 대한 액세스를 제어합니다.    
 
 ## <a name="client-library"></a>클라이언트 라이브러리   
 
@@ -40,7 +40,7 @@ pip install azure-graphrbac
 
 ### <a name="example"></a>예 
 > [!NOTE]   
-> 자격 증명 인스턴스를 만드는 동안 리소스 매개 변수를 https://graph.windows.net으로 변경해야 합니다.    
+> 자격 증명 인스턴스를 만드는 동안 리소스 매개 변수를 https://graph.windows.net 으로 변경해야 합니다.    
  ```python  
 from azure.graphrbac import GraphRbacManagementClient   
 from azure.common.credentials import UserPassCredentials    

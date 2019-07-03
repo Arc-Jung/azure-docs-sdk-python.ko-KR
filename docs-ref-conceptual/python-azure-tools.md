@@ -8,13 +8,13 @@ ms.topic: article
 ms.service: Azure
 ms.technology: Azure
 ms.date: 06/21/2017
-ms.author: liwong
-ms.openlocfilehash: 35faf0a6b74e4122c22ae0a6304d990dd13df057
-ms.sourcegitcommit: c57305dad01cad925faf50a64953c408429d4ca9
+ms.author: routlaw
+ms.openlocfilehash: 0930654af3c3f5bc6d3341959dff929225ebcf7d
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 12/05/2017
-ms.locfileid: "26184597"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534483"
 ---
 # <a name="azure-tools-for-python-developers"></a>Python 개발자용 Azure 도구
 
@@ -25,7 +25,7 @@ Azure CLI 2.0은 구독에 Azure 리소스를 만들고 구성할 수 있는 명
 [Azure CLI 2.0 설치](https://docs.microsoft.com/cli/azure/install-azure-cli)
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
-Python은 Visual Studio Code의 확장 기능을 통해 완벽하게 지원됩니다. Marketplace에서 인기 있는 확장 기능은 코드 자동완성, 기준선 맞춤, 디버깅, 코드 서식, 코드 조각 등을 제공합니다.
+Python은 Visual Studio Code의 확장 기능을 통해 완벽하게 지원됩니다. Marketplace에서 인기 있는 확장은 코드 완성, 기준선 맞춤, 디버깅, 코드 서식, 코드 조각 등을 제공합니다.
 
 [Visual Studio Code 및 확장 설치(영문)](https://code.visualstudio.com/docs/languages/python)
 
@@ -35,6 +35,6 @@ Windows에서 Visual Studio는 Python 개발 및 데이터 과학 작업(Visual 
 [Visual Studio에 Python 지원 설치](https://docs.microsoft.com/visualstudio/python/installation)
 
 ## <a name="azure-notebooks-preview"></a>Azure Notebooks(미리 보기)
-Azure Notebooks는 Jupyter Notebooks를 호스팅하는 서비스이며 설치할 필요가 없습니다. 프로토타입, 데이터 과학, 학술 연구 또는 Python, R 및 F# 프로그래밍 학습을 빠르게 시작할 수 있습니다. 코드, markdown, 이미지, 비디오, 그래프 등을 모두 하나의 형식으로 결합할 수 있습니다.
+Azure Notebooks는 설치할 필요가 없는 Jupyter Notebooks 호스팅된 서비스입니다. 프로토타입, 데이터 과학, 학술 연구 또는 Python, R 및 F# 프로그래밍 학습을 빠르게 시작할 수 있습니다. 코드, markdown, 이미지, 비디오, 그래프 등을 모두 하나의 형식으로 결합할 수 있습니다.
 
 [Azure Notebooks 시작(영문)](https://notebooks.azure.com/)

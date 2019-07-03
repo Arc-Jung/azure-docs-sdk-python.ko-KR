@@ -3,7 +3,7 @@ title: Python용 Azure Data Lake Analytics 라이브러리
 description: Python용 Azure Data Lake Analytics 라이브러리에 대한 참조
 keywords: Azure, Python, SDK, API, Data Lake Analytics
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 08/04/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: f1bba0556baf7c373a3584c2dae922e04fa76fc8
-ms.sourcegitcommit: f439ba940d5940359c982015db7ccfb82f9dffd9
+ms.openlocfilehash: e98b2f314080146429c89061ab5e154526a87a48
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 11/21/2018
-ms.locfileid: "52279266"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534309"
 ---
 # <a name="azure-data-lake-analytics-libraries-for-python"></a>Python용 Azure Data Lake Analytics 라이브러리
 
