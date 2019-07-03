@@ -11,36 +11,36 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 27238e00463ae30ec0e47e8c18497ffb9edac62c
-ms.sourcegitcommit: 253c8d4b3dbc2bb76d1a273a757ab96ba37617a1
+ms.openlocfilehash: e9b0aba7998565284ae18e0036da96d033b2b05f
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/16/2019
-ms.locfileid: "65731539"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534273"
 ---
-# <a name="azure-active-directory-graph-libraries-for-python"></a><span data-ttu-id="66246-104">Python용 Azure Active Directory Graph 라이브러리</span><span class="sxs-lookup"><span data-stu-id="66246-104">Azure Active Directory Graph libraries for Python</span></span>
+# <a name="azure-active-directory-graph-libraries-for-python"></a><span data-ttu-id="f4067-104">Python용 Azure Active Directory Graph 라이브러리</span><span class="sxs-lookup"><span data-stu-id="f4067-104">Azure Active Directory Graph libraries for Python</span></span>
 
 > [!IMPORTANT]
 >
-> <span data-ttu-id="66246-105">2019년 2월부터 Microsoft Graph API를 위해 이전 버전의 Azure Active Directory Graph API를 사용하지 않도록 중단하는 프로세스를 시작했습니다.</span><span class="sxs-lookup"><span data-stu-id="66246-105">As of February 2019, we started the process to deprecate some earlier versions of Azure Active Directory Graph API in favor of the Microsoft Graph API.</span></span> 
+> <span data-ttu-id="f4067-105">2019년 2월부터 Microsoft Graph API를 위해 이전 버전의 Azure Active Directory Graph API를 사용하지 않도록 중단하는 프로세스를 시작했습니다.</span><span class="sxs-lookup"><span data-stu-id="f4067-105">As of February 2019, we started the process to deprecate some earlier versions of Azure Active Directory Graph API in favor of the Microsoft Graph API.</span></span> 
 >
-> <span data-ttu-id="66246-106">자세한 내용, 업데이트 및 시간 프레임은 Office 개발자 센터의 [Microsoft Graph 또는 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="66246-106">For details, updates, and time frames, see [Microsoft Graph or the Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) in the Office Dev Center.</span></span>
+> <span data-ttu-id="f4067-106">자세한 내용, 업데이트 및 시간 프레임은 Office 개발자 센터의 [Microsoft Graph 또는 Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph)를 참조하세요.</span><span class="sxs-lookup"><span data-stu-id="f4067-106">For details, updates, and time frames, see [Microsoft Graph or the Azure AD Graph](https://dev.office.com/blogs/microsoft-graph-or-azure-ad-graph) in the Office Dev Center.</span></span>
 >
-> <span data-ttu-id="66246-107">앞으로 애플리케이션은 Microsoft Graph API를 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66246-107">Moving forward, applications should use the Microsoft Graph API.</span></span> 
+> <span data-ttu-id="f4067-107">앞으로 애플리케이션은 Microsoft Graph API를 사용해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4067-107">Moving forward, applications should use the Microsoft Graph API.</span></span> 
 
-## <a name="overview"></a><span data-ttu-id="66246-108">개요</span><span class="sxs-lookup"><span data-stu-id="66246-108">Overview</span></span> 
+## <a name="overview"></a><span data-ttu-id="f4067-108">개요</span><span class="sxs-lookup"><span data-stu-id="f4067-108">Overview</span></span> 
 
-<span data-ttu-id="66246-109">[Active Directory Graph](/azure/active-directory/develop/active-directory-graph-apis)를 사용하여 사용자로 로그온하고 애플리케이션 및 API에 대한 액세스를 제어합니다.</span><span class="sxs-lookup"><span data-stu-id="66246-109">Sign-on users and control access to applications and APIs with [Active Directory Graph](/azure/active-directory/develop/active-directory-graph-apis).</span></span>   
+<span data-ttu-id="f4067-109">[Active Directory Graph](/azure/active-directory/develop/active-directory-graph-api)를 사용하여 사용자로 로그온하고 애플리케이션 및 API에 대한 액세스를 제어합니다.</span><span class="sxs-lookup"><span data-stu-id="f4067-109">Sign-on users and control access to applications and APIs with [Active Directory Graph](/azure/active-directory/develop/active-directory-graph-api).</span></span>    
 
-## <a name="client-library"></a><span data-ttu-id="66246-110">클라이언트 라이브러리</span><span class="sxs-lookup"><span data-stu-id="66246-110">Client library</span></span>   
+## <a name="client-library"></a><span data-ttu-id="f4067-110">클라이언트 라이브러리</span><span class="sxs-lookup"><span data-stu-id="f4067-110">Client library</span></span>   
 
  ```bash    
 pip install azure-graphrbac 
 ``` 
 
-### <a name="example"></a><span data-ttu-id="66246-111">예</span><span class="sxs-lookup"><span data-stu-id="66246-111">Example</span></span> 
+### <a name="example"></a><span data-ttu-id="f4067-111">예</span><span class="sxs-lookup"><span data-stu-id="f4067-111">Example</span></span> 
 > [!NOTE]   
-> <span data-ttu-id="66246-112">자격 증명 인스턴스를 만드는 동안 리소스 매개 변수를 https://graph.windows.net으로 변경해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="66246-112">You need to change the resource parameter to https://graph.windows.net while creating the credentials instance</span></span>    
+> <span data-ttu-id="f4067-112">자격 증명 인스턴스를 만드는 동안 리소스 매개 변수를 https://graph.windows.net 으로 변경해야 합니다.</span><span class="sxs-lookup"><span data-stu-id="f4067-112">You need to change the resource parameter to https://graph.windows.net while creating the credentials instance</span></span>    
  ```python  
 from azure.graphrbac import GraphRbacManagementClient   
 from azure.common.credentials import UserPassCredentials    
@@ -55,7 +55,7 @@ from azure.common.credentials import UserPassCredentials
     tenant_id   
 )   
 ``` 
-<span data-ttu-id="66246-113">다음 코드에서는 사용자를 만들고 목록 필터링을 통해 직접 가져와서 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="66246-113">The following code creates a user, get it directly and by list filtering, and then delete it.</span></span>   
+<span data-ttu-id="f4067-113">다음 코드에서는 사용자를 만들고 목록 필터링을 통해 직접 가져와서 삭제합니다.</span><span class="sxs-lookup"><span data-stu-id="f4067-113">The following code creates a user, get it directly and by list filtering, and then delete it.</span></span>   
 ```python   
 from azure.graphrbac.models import UserCreateParameters, PasswordProfile    
  user = graphrbac_client.users.create(  
