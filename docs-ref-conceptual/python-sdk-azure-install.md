@@ -3,7 +3,7 @@ title: 설치
 description: Azure Python SDK를 설치하는 방법을 설명합니다.
 keywords: Azure, Python, SDK, API
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/05/2017
 ms.topic: install
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: multiple
-ms.openlocfilehash: 6014937fb41d6074e94578ccc47c30eb7b3f63d2
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: 478118642122d7c0c80b1ddf37b13f71d8ca3adc
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376873"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534454"
 ---
 # <a name="installation"></a>설치
 
@@ -77,3 +77,24 @@ git clone git://github.com/Azure/azure-sdk-for-python.git
 cd azure-sdk-for-python
 python setup.py install
 ```
+
+## <a name="install-an-older-version-with-pip"></a>Pip를 사용하여 이전 버전을 설치
+`azure`'azure==3.0.0' 버전 세부 정보를 지정하여 이전 버전을 설치할 수 있습니다.
+```bash
+pip install azure==3.0.0 
+```
+## <a name="check-sdk-installation-details-with-pip"></a>Pip를 사용하여 SDK 설치 세부 정보를 확인합니다.
+`azure` SDK 설치 위치, 버전 정보 등을 확인할 수 있습니다.
+```bash
+pip show azure # Show installed version, location details etc.
+pip freeze     # Output installed packages in requirements format.
+pip list       # List installed packages, including editables.
+```
+## <a name="to-uninstall-with-pip"></a>pip를 사용하여 제거하려면 다음을 수행합니다.
+`azure` 메타패키지를 사용하여 한 줄로 Azure 라이브러리의 집합을 제거할 수 있습니다.
+```bash
+pip uninstall azure 
+```
+> [!NOTE]
+> `pip uninstall azure`는 `azure` 메타패키지를 제거하지만 개별 `azure-*` 패키지(그리고 `adal` 및 `msrest` 등의 기타)를 뒤에 남겨 둡니다. Python과 pip의 한 측면은 종속성이 있는 모든 패키지에 대해 초기 패키지를 제거해도 종속성을 제거하지 않는다는 것입니다. `azure-` 및 지원 패키지를 제거하려면 `pip freeze | grep 'azure-' | xargs pip uninstall -y` 명령을 실행한 다음 adal, msrest 및 msrestazure에 대한 개별 제거를 수행합니다.
+
