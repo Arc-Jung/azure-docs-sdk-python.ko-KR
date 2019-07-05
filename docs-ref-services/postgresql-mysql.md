@@ -3,19 +3,19 @@ title: Python용 Azure MySQL/PostgreSQL 라이브러리
 description: ''
 keywords: Azure, Python, SDK, API, SQL, 데이터베이스, MySQL, PostgreSQL
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 07/19/2017
 ms.topic: article
 ms.prod: azure
 ms.technology: azure
 ms.devlang: python
-ms.openlocfilehash: 402e87ae81e6df64b040293992244902313e5b1b
-ms.sourcegitcommit: fba77bdf8eb9f49621be94544d9fef88aff98c14
+ms.openlocfilehash: 81a29ea16dc9857257859181f0c2e5be8b4b7901
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 01/23/2019
-ms.locfileid: "54747723"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534231"
 ---
 # <a name="azure-mysqlpostgresql-libraries-for-python"></a>Python용 Azure MySQL/PostgreSQL 라이브러리
 
@@ -25,7 +25,7 @@ MySQL 관리자 및 pyodbc를 사용하여 Python에서 [Azure MySQL Database](/
 
 ### <a name="client-odbc-driver-and-pyodbc"></a>Client ODBC 드라이버 및 pyodbc
 
-Azure Database for MySQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 Microsoft [ODBC 드라이버](/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries)입니다. ODBC 드라이버를 사용하여 데이터베이스에 연결하고 SQL 문을 직접 실행합니다.
+Azure Database for MySQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 Microsoft [ODBC 드라이버](/azure/sql-database/sql-database-connect-query-python#prerequisites)입니다. ODBC 드라이버를 사용하여 데이터베이스에 연결하고 SQL 문을 직접 실행합니다.
 
 #### <a name="example"></a>예
 
@@ -113,7 +113,7 @@ ODBC 드라이버 및 pyodbc를 사용하여 데이터베이스에 연결하고 
 [Azure Database for PostgreSQL](https://docs.microsoft.com/azure/postgresql/)에 대해 자세히 알아보세요.
 
 ### <a name="client-odbc-driver-and-pyodbc"></a>Client ODBC 드라이버 및 pyodbc
-Azure Database for PostgreSQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 Microsoft [ODBC 드라이버 및 pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#install-the-python-and-database-communication-libraries)입니다.
+Azure Database for PostgreSQL에 액세스하는 데 권장되는 클라이언트 라이브러리는 Microsoft [ODBC 드라이버 및 pyodbc](https://docs.microsoft.com/azure/sql-database/sql-database-connect-query-python#prerequisites)입니다.
 
 #### <a name="example"></a>예 
 

@@ -3,7 +3,7 @@ title: Python용 Azure Virtual Machine 라이브러리
 description: ''
 keywords: Azure, Python, SDK, API, Compute, Virtual Machines
 author: lisawong19
-ms.author: liwong
+ms.author: routlaw
 manager: douge
 ms.date: 06/09/2017
 ms.topic: article
@@ -11,12 +11,12 @@ ms.prod: azure
 ms.technology: azure
 ms.devlang: python
 ms.service: compute
-ms.openlocfilehash: 78750d5f98ab81401c48493aff98d4268c01850d
-ms.sourcegitcommit: 434186988284e0a8268a9de11645912a81226d6b
+ms.openlocfilehash: e09ffed98f3f6050e34ca2cb39e645e30f8bdb15
+ms.sourcegitcommit: 46bebbf5dd558750043ce5afadff2ec3714a54e6
 ms.translationtype: HT
 ms.contentlocale: ko-KR
-ms.lasthandoff: 05/29/2019
-ms.locfileid: "66376705"
+ms.lasthandoff: 07/03/2019
+ms.locfileid: "67534184"
 ---
 # <a name="azure-virtual-machine-libraries"></a>Azure 가상 머신 라이브러리
 
@@ -77,8 +77,8 @@ def create_vm()
 ## <a name="samples"></a>샘플
 
 * [가상 머신 관리][1]
-* [관리되는 서비스 ID를 사용하여 인증][2]
-* [관리되는 서비스 ID 확장을 사용하여 가상 머신 만들기][3]
+* [관리 서비스 ID를 사용하여 인증][2]
+* [관리 서비스 ID 확장을 사용하여 가상 머신 만들기][3]
 * [부하 분산 장치 관리(영문)][4]
 * [관리 디스크 만들기 및 구성][5]
 * [이미지 나열][6] 
